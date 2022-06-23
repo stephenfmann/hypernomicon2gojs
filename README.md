@@ -11,4 +11,8 @@ This repository contains Python scripts that translate Hypernomicon's XML into a
 
 ## How to use
 
-`python convert.py [--input XML_FILEPATH] [--output JSON_FILEPATH] [--html HTML_FILEPATH]`
+`python convert.py [--input XML_FILEPATH] [--json JSON_FILEPATH] [--html HTML_FILEPATH]`
+
++ Default `XML_FILEPATH` is Positions.xml
++ Default `JSON_FILEPATH` is hyper2gojs.json
++ Default `HTML_FILEPATH` is blockEditor.html

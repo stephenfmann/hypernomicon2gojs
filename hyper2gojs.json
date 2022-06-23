@@ -1,0 +1,436 @@
+{
+    "class": "GraphLinksModel",
+    "nodeDataArray": [
+        {
+            "key": 1,
+            "text": "Linguistic nativism",
+            "loc": "60 30"
+        },
+        {
+            "key": 2,
+            "text": "Libertarianism",
+            "loc": "200 30"
+        },
+        {
+            "key": 3,
+            "text": "Teleosemantics",
+            "loc": "340 30"
+        },
+        {
+            "key": 4,
+            "text": "FEP is not truth-apt because it designates a model structure",
+            "loc": "480 30"
+        },
+        {
+            "key": 5,
+            "text": "Conceptual analysis is useful",
+            "loc": "620 30"
+        },
+        {
+            "key": 6,
+            "text": "Pearl blankets vs Friston blankets",
+            "loc": "760 30"
+        },
+        {
+            "key": 7,
+            "text": "Generalizations are affected by the structure of the hypothesis space",
+            "loc": "900 30"
+        },
+        {
+            "key": 8,
+            "text": "Linguistic Realism",
+            "loc": "60 110"
+        },
+        {
+            "key": 9,
+            "text": "Generalized Darwinism",
+            "loc": "200 110"
+        },
+        {
+            "key": 10,
+            "text": "Chunking constrains the evolution of linguistic structure",
+            "loc": "340 110"
+        },
+        {
+            "key": 11,
+            "text": "The success pattern condition is a necessary condition on intentionality",
+            "loc": "600 90"
+        },
+        {
+            "key": 12,
+            "text": "The constancy mechanism condition is a necessary condition on intentionality",
+            "loc": "1050 470"
+        },
+        {
+            "key": 13,
+            "text": "Beliefs are real",
+            "loc": "740 -70"
+        },
+        {
+            "key": 14,
+            "text": "Beliefs are not real",
+            "loc": "900 110"
+        },
+        {
+            "key": 15,
+            "text": "Binarism: beliefs are either real or not real",
+            "loc": "-260 0"
+        },
+        {
+            "key": 16,
+            "text": "Realism about centres of gravity",
+            "loc": "200 190"
+        },
+        {
+            "key": 17,
+            "text": "Metaphysical vs scientific approach to abstract objects",
+            "loc": "490 350"
+        },
+        {
+            "key": 18,
+            "text": "Pro-scientific approach",
+            "loc": "480 190"
+        },
+        {
+            "key": 19,
+            "text": "Mild realism: Beliefs are abstract objects",
+            "loc": "630 240"
+        },
+        {
+            "key": 20,
+            "text": "Mild realism",
+            "loc": "760 190"
+        },
+        {
+            "key": 21,
+            "text": "Industrial-strength Realism",
+            "loc": "900 190"
+        },
+        {
+            "key": 22,
+            "text": "Regular strength realism",
+            "loc": "60 270"
+        },
+        {
+            "key": 23,
+            "text": "Milder-than-mild irrealism",
+            "loc": "1030 -30"
+        },
+        {
+            "key": 24,
+            "text": "Eliminative materialism",
+            "loc": "1070 20"
+        },
+        {
+            "key": 25,
+            "text": "Interventionism",
+            "loc": "-280 100"
+        },
+        {
+            "key": 26,
+            "text": "i-theories",
+            "loc": "-250 450"
+        },
+        {
+            "key": 27,
+            "text": "p-theories",
+            "loc": "-90 90"
+        },
+        {
+            "key": 28,
+            "text": "Program account",
+            "loc": "900 270"
+        },
+        {
+            "key": 29,
+            "text": "Signalhood requires causation",
+            "loc": "60 350"
+        },
+        {
+            "key": 30,
+            "text": "Manipulability theory",
+            "loc": "-130 350"
+        },
+        {
+            "key": 31,
+            "text": "Duality of theorem and definition",
+            "loc": "340 350"
+        },
+        {
+            "key": 32,
+            "text": "Dual proposal: success pattern and constancy mechanism",
+            "loc": "1080 210"
+        },
+        {
+            "key": 33,
+            "text": "Representations belong in a hierarchy of increasing complexity",
+            "loc": "620 350"
+        },
+        {
+            "key": 34,
+            "text": "The success pattern condition is a sufficient condition on minimal intentionality",
+            "loc": "760 350"
+        },
+        {
+            "key": 35,
+            "text": "Explanatory role criterion",
+            "loc": "900 350"
+        },
+        {
+            "key": 36,
+            "text": "Extended active inference describes the causal reciprocal relationship between an individual organism and its cognitive niche",
+            "loc": "60 430"
+        },
+        {
+            "key": 37,
+            "text": "Minimizing free energy is a necessary condition on life",
+            "loc": "200 430"
+        },
+        {
+            "key": 38,
+            "text": "Minimizing free energy is sufficient for life",
+            "loc": "340 430"
+        },
+        {
+            "key": 39,
+            "text": "Minimizing expected free energy requires sophisticated capacities for counterfactual reasoning",
+            "loc": "480 430"
+        },
+        {
+            "key": 40,
+            "text": "Cognitive agents are those that perform counterfactual active inference",
+            "loc": "620 430"
+        },
+        {
+            "key": 41,
+            "text": "Allostasis is sufficient for cognition",
+            "loc": "760 430"
+        },
+        {
+            "key": 42,
+            "text": "FEP models exacerbate a trade-off between generality and biological plausibility",
+            "loc": "900 430"
+        },
+        {
+            "key": 43,
+            "text": "Assumptions such as ergoditicity and NESS are implausible of biological systems",
+            "loc": "60 510"
+        },
+        {
+            "key": 44,
+            "text": "Neurons are not relays",
+            "loc": "200 510"
+        },
+        {
+            "key": 45,
+            "text": "Signals bear different involvement relations with world affairs",
+            "loc": "340 510"
+        },
+        {
+            "key": 46,
+            "text": "Incrementalism about the origin of natural language",
+            "loc": "480 510"
+        },
+        {
+            "key": 47,
+            "text": "Simple Coordination Thesis",
+            "loc": "620 510"
+        }
+    ],
+    "linkDataArray": [
+        {
+            "from": 32,
+            "to": 11,
+            "points": [
+                1020,
+                210,
+                1010,
+                210,
+                1010,
+                210,
+                1010,
+                148,
+                692,
+                148,
+                692,
+                90,
+                670,
+                90,
+                660,
+                90
+            ]
+        },
+        {
+            "from": 32,
+            "to": 12,
+            "points": [
+                1080,
+                240,
+                1080,
+                250,
+                1080,
+                340,
+                1050,
+                340,
+                1050,
+                430,
+                1050,
+                440
+            ]
+        },
+        {
+            "from": 17,
+            "to": 18,
+            "points": [
+                490,
+                320,
+                490,
+                310,
+                490,
+                270,
+                480,
+                270,
+                480,
+                230,
+                480,
+                220
+            ]
+        },
+        {
+            "from": 13,
+            "to": 21,
+            "points": [
+                760,
+                -40,
+                760,
+                -30,
+                760,
+                -28,
+                828,
+                -28,
+                828,
+                148,
+                900,
+                148,
+                900,
+                150,
+                900,
+                160
+            ]
+        },
+        {
+            "from": 13,
+            "to": 22,
+            "points": [
+                720,
+                -40,
+                720,
+                -30,
+                720,
+                -28,
+                692,
+                -28,
+                692,
+                -42,
+                -147.8000030517578,
+                -42,
+                -147.8000030517578,
+                270,
+                130,
+                270,
+                120,
+                270
+            ]
+        },
+        {
+            "from": 14,
+            "to": 23,
+            "points": [
+                900,
+                80,
+                900,
+                70,
+                900,
+                68,
+                1030,
+                68,
+                1030,
+                10,
+                1030,
+                0
+            ]
+        },
+        {
+            "from": 14,
+            "to": 24,
+            "points": [
+                960,
+                110,
+                970,
+                110,
+                1070,
+                110,
+                1070,
+                85,
+                1070,
+                60,
+                1070,
+                50
+            ]
+        },
+        {
+            "from": 25,
+            "to": 26,
+            "points": [
+                -280,
+                130,
+                -280,
+                140,
+                -280,
+                275,
+                -250,
+                275,
+                -250,
+                410,
+                -250,
+                420
+            ]
+        },
+        {
+            "from": 25,
+            "to": 27,
+            "points": [
+                -220,
+                100,
+                -210,
+                100,
+                -185,
+                100,
+                -185,
+                90,
+                -160,
+                90,
+                -150,
+                90
+            ]
+        },
+        {
+            "from": 25,
+            "to": 30,
+            "points": [
+                -260,
+                130,
+                -260,
+                140,
+                -260,
+                225,
+                -130,
+                225,
+                -130,
+                310,
+                -130,
+                320
+            ]
+        }
+    ]
+}

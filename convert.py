@@ -22,20 +22,24 @@ def run(args):
     """
     
     ## Parse the input
-    objects,arrows = parse_xml(args['input'])
+    nodes,links = parse_xml(args['input'])
     
     ## Create JSON
-    json_object = create_json(objects,arrows)
+    json_object = create_json(nodes,links)
+    
+    ## Fix the locations of known nodes and links
+    json_object = fix_locations(json_object,args['json'])
     
     ## Dump JSON
-    output_json(json_object,args['output'])
+    output_json(json_object,args['json'])
     
     ## Output HTML
     output_html(json_object,args['html'])
+    
 
 def parse_xml(fpath_xml):
     """
-    Get basic info on objects and arrows from XML file.
+    Get basic info on nodes and links from XML file.
 
     Parameters
     ----------
@@ -44,11 +48,11 @@ def parse_xml(fpath_xml):
 
     Returns
     -------
-    objects : list
-        GoJS format of objects. Example:
+    nodes : list
+        GoJS format of nodes. Example:
             {"key":25,"loc":"0 0","text":"Interventionism"}
-    arrows : list
-        GoJS format of arrows between objects. Example:
+    links : list
+        GoJS format of links between nodes. Example:
             {"from":25,"to":26}
 
     """
@@ -57,18 +61,18 @@ def parse_xml(fpath_xml):
     with open(fpath_xml,'r') as f:
         xml = bs(f.read(), features="xml")
     
-    ## Extract the objects
-    objects = get_objects(xml)
+    ## Extract the nodes
+    nodes = get_nodes(xml)
     
-    ## Extract the arrows
-    arrows = get_arrows(xml)
+    ## Extract the links
+    links = get_links(xml)
     
     
-    return objects,arrows
+    return nodes,links
 
-def get_objects(xml):
+def get_nodes(xml):
     """
-    From an XML string, return objects as GoJS JSON list
+    From an XML string, return nodes as GoJS JSON list
 
     Parameters
     ----------
@@ -76,14 +80,14 @@ def get_objects(xml):
 
     Returns
     -------
-    objects : list
-        GoJS format of objects. Example:
+    nodes : list
+        GoJS format of nodes. Example:
             {"key":25,"loc":"0 0","text":"Interventionism"}
 
     """
     
     ## Initialise JSON list of dicts
-    objects = []
+    nodes = []
     
     ## Just positions for now
     ## Later we will include arguments.
@@ -97,13 +101,13 @@ def get_objects(xml):
             }
         
         ## Add this record to the JSON list
-        objects.append(record_dict)
+        nodes.append(record_dict)
     
-    return objects
+    return nodes
 
-def get_arrows(xml):
+def get_links(xml):
     """
-    From an XML string, return arrows as GoJS JSON list
+    From an XML string, return links as GoJS JSON list
 
     Parameters
     ----------
@@ -111,8 +115,8 @@ def get_arrows(xml):
 
     Returns
     -------
-    arrows : list
-        GoJS format of arrows between objects. Example:
+    links : list
+        GoJS format of links between nodes. Example:
             {"from":25,"to":26}
 
     """
@@ -125,7 +129,7 @@ def get_arrows(xml):
     records_xml = xml.find_all(position_has_parent)
     
     ## Initialise
-    arrows = []
+    links = []
     
     for child_record in records_xml:
         
@@ -136,19 +140,19 @@ def get_arrows(xml):
             }
         
         ## Append arrow to dict
-        arrows.append(arrow_dict)
+        links.append(arrow_dict)
     
-    return arrows
+    return links
 
-def create_json(objects,arrows):
+def create_json(nodes,links):
     """
-    From a list of objects and arrows, create the GoJS JSON object
+    From a list of nodes and links, create the GoJS JSON object
 
     Parameters
     ----------
-    objects : TYPE
+    nodes : TYPE
         DESCRIPTION.
-    arrows : TYPE
+    links : TYPE
         DESCRIPTION.
 
     Returns
@@ -160,8 +164,8 @@ def create_json(objects,arrows):
     
     json_object = {
         "class" : "GraphLinksModel",
-        "nodeDataArray" : objects,
-        "linkDataArray" : arrows
+        "nodeDataArray" : nodes,
+        "linkDataArray" : links
         }
     
     return json_object
@@ -175,6 +179,111 @@ def output_json(json_object,fpath_out):
             indent=4 # pretty print
             )
 
+def fix_locations(json_object,fpath_json):
+    """
+    Nodes and links
+
+    Parameters
+    ----------
+    json_object : TYPE
+        DESCRIPTION.
+    fpath_html : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    json_object : TYPE
+        DESCRIPTION.
+
+    """
+    
+    ## Get the current HTML file
+    with open(fpath_json,'r') as f:
+        # html = bs(f.read(), features="lxml")
+        json_object_current = json.loads(f.read()) 
+    
+    ## Get the textarea containing the current JSON
+    # def textarea_model(tag):
+    #     return tag.name=='textarea' and tag['id']=='mySavedModel'
+    
+    # textarea = html.find(textarea_model)
+    
+    ## Get the current JSON object from the HTML file
+    # json_object_current = json.loads(textarea.text) 
+    
+    ## Now for each of the nodes we want to add, check whether it already exists in <json_object_current>.
+    ## If so, keep its location.
+    ## Same with links.
+    for node in json_object['nodeDataArray']:
+        
+        ## Does this node already exist?
+        node_current = find_node(json_object_current,node)
+        
+        if not node_current:continue
+        
+        ## This node already exists.
+        ## Take its location from node_current.
+        if "loc" in node_current:
+            node["loc"] = node_current["loc"]
+    
+    ## Now do the same for links
+    for link in json_object['linkDataArray']:
+        
+        ## Does this link already exist?
+        link_current = find_link(json_object_current,link)
+        
+        if not link_current:continue
+        
+        ## This link already exists.
+        ## Take its point locations from link_current.
+        if "points" in link_current:
+            link["points"] = link_current["points"]
+    
+    return json_object
+
+def find_node(json_object_current,node)->None:
+    """
+    Determine whether a node with this ID already exists
+
+    Parameters
+    ----------
+    json_object_current : dict
+        DESCRIPTION.
+    node : dict
+        DESCRIPTION.
+
+    Returns
+    -------
+    node_current : dict
+        DESCRIPTION.
+
+    """
+    
+    for node_current_candidate in json_object_current['nodeDataArray']: # maybe there's a quicker way to do this
+        if node_current_candidate["key"] == node["key"]: return node_current_candidate
+
+def find_link(json_object_current,link)->None:
+    """
+    Determine whether a link with this from- and to- already exists.
+
+    Parameters
+    ----------
+    json_object_current : TYPE
+        DESCRIPTION.
+    link : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    link_current : TYPE
+        DESCRIPTION.
+
+    """
+    
+    for link_current_candidate in json_object_current['linkDataArray']: # maybe there's a quicker way to do this
+        if link_current_candidate["from"] == link["from"] and link_current_candidate["to"] == link["to"]: 
+            return link_current_candidate
+    
 def output_html(json_object,fpath_html):
     """
     Basically assumes a blockEditor type page
@@ -222,11 +331,11 @@ parser.add_argument('--input',
                     )
 
 ## Add the JSON output file argument
-parser.add_argument('--output',
+parser.add_argument('--json',
                     metavar='JSON_FILEPATH',
                     type=str,
-                    nargs='?', # zero or one
-                    default='Positions.json' # default output file
+                    nargs='?',
+                    default='hyper2gojs.json'
                     )
 
 ## Should we also update blockEditor.html?

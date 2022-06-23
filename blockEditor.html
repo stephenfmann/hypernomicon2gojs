@@ -14,6 +14,7 @@
 <script src="https://unpkg.com/gojs@2.2.11/extensions/Figures.js"></script>
 <script src="https://unpkg.com/gojs@2.2.11/extensions/DrawCommandHandler.js"></script>
 <script id="code">
+    
     function init() {
 
       // Since 2.2 you can also author concise templates with method chaining instead of GraphObject.make
@@ -538,7 +539,9 @@
 
     // Show the diagram's model in JSON format
     function save() {
-      document.getElementById("mySavedModel").value = myDiagram.model.toJson();
+      var newJSON = myDiagram.model.toJson();
+      document.getElementById("mySavedModel").value = newJSON
+      document.getElementById("mySavedModel").innerHTML = newJSON
       myDiagram.isModified = false;
     }
     function load() {
@@ -562,244 +565,484 @@
   </p>
 <div id="buttons">
 <button id="loadModel" onclick="load()">Load</button>
-<button id="saveModel" onclick="save()">Save</button>
+<button id="saveModel" onclick="save()">Dump</button>
+<button id="save" type="button" value="save">Save</button>
 </div>
 <textarea id="mySavedModel" style="width:100%;height:300px">{
     "class": "GraphLinksModel",
     "nodeDataArray": [
         {
             "key": 1,
-            "text": "Linguistic nativism"
+            "text": "Linguistic nativism",
+            "loc": "60 30"
         },
         {
             "key": 2,
-            "text": "Libertarianism"
+            "text": "Libertarianism",
+            "loc": "200 30"
         },
         {
             "key": 3,
-            "text": "Teleosemantics"
+            "text": "Teleosemantics",
+            "loc": "340 30"
         },
         {
             "key": 4,
-            "text": "FEP is not truth-apt because it designates a model structure"
+            "text": "FEP is not truth-apt because it designates a model structure",
+            "loc": "480 30"
         },
         {
             "key": 5,
-            "text": "Conceptual analysis is useful"
+            "text": "Conceptual analysis is useful",
+            "loc": "620 30"
         },
         {
             "key": 6,
-            "text": "Pearl blankets vs Friston blankets"
+            "text": "Pearl blankets vs Friston blankets",
+            "loc": "760 30"
         },
         {
             "key": 7,
-            "text": "Generalizations are affected by the structure of the hypothesis space"
+            "text": "Generalizations are affected by the structure of the hypothesis space",
+            "loc": "900 30"
         },
         {
             "key": 8,
-            "text": "Linguistic Realism"
+            "text": "Linguistic Realism",
+            "loc": "60 110"
         },
         {
             "key": 9,
-            "text": "Generalized Darwinism"
+            "text": "Generalized Darwinism",
+            "loc": "200 110"
         },
         {
             "key": 10,
-            "text": "Chunking constrains the evolution of linguistic structure"
+            "text": "Chunking constrains the evolution of linguistic structure",
+            "loc": "340 110"
         },
         {
             "key": 11,
-            "text": "The success pattern condition is a necessary condition on intentionality"
+            "text": "The success pattern condition is a necessary condition on intentionality",
+            "loc": "600 90"
         },
         {
             "key": 12,
-            "text": "The constancy mechanism condition is a necessary condition on intentionality"
+            "text": "The constancy mechanism condition is a necessary condition on intentionality",
+            "loc": "1050 470"
         },
         {
             "key": 13,
-            "text": "Beliefs are real"
+            "text": "Beliefs are real",
+            "loc": "740 -70"
         },
         {
             "key": 14,
-            "text": "Beliefs are not real"
+            "text": "Beliefs are not real",
+            "loc": "900 110"
         },
         {
             "key": 15,
-            "text": "Binarism: beliefs are either real or not real"
+            "text": "Binarism: beliefs are either real or not real",
+            "loc": "-260 0"
         },
         {
             "key": 16,
-            "text": "Realism about centres of gravity"
+            "text": "Realism about centres of gravity",
+            "loc": "200 190"
         },
         {
             "key": 17,
-            "text": "Metaphysical vs scientific approach to abstract objects"
+            "text": "Metaphysical vs scientific approach to abstract objects",
+            "loc": "490 350"
         },
         {
             "key": 18,
-            "text": "Pro-scientific approach"
+            "text": "Pro-scientific approach",
+            "loc": "480 190"
         },
         {
             "key": 19,
-            "text": "Mild realism: Beliefs are abstract objects"
+            "text": "Mild realism: Beliefs are abstract objects",
+            "loc": "630 240"
         },
         {
             "key": 20,
-            "text": "Mild realism"
+            "text": "Mild realism",
+            "loc": "760 190"
         },
         {
             "key": 21,
-            "text": "Industrial-strength Realism"
+            "text": "Industrial-strength Realism",
+            "loc": "900 190"
         },
         {
             "key": 22,
-            "text": "Regular strength realism"
+            "text": "Regular strength realism",
+            "loc": "60 270"
         },
         {
             "key": 23,
-            "text": "Milder-than-mild irrealism"
+            "text": "Milder-than-mild irrealism",
+            "loc": "1030 -30"
         },
         {
             "key": 24,
-            "text": "Eliminative materialism"
+            "text": "Eliminative materialism",
+            "loc": "1070 20"
         },
         {
             "key": 25,
-            "text": "Interventionism"
+            "text": "Interventionism",
+            "loc": "-280 100"
         },
         {
             "key": 26,
-            "text": "i-theories"
+            "text": "i-theories",
+            "loc": "-250 450"
         },
         {
             "key": 27,
-            "text": "p-theories"
+            "text": "p-theories",
+            "loc": "-90 90"
         },
         {
             "key": 28,
-            "text": "Program account"
+            "text": "Program account",
+            "loc": "900 270"
         },
         {
             "key": 29,
-            "text": "Signalhood requires causation"
+            "text": "Signalhood requires causation",
+            "loc": "60 350"
         },
         {
             "key": 30,
-            "text": "Manipulability theory"
+            "text": "Manipulability theory",
+            "loc": "-130 350"
         },
         {
             "key": 31,
-            "text": "Duality of theorem and definition"
+            "text": "Duality of theorem and definition",
+            "loc": "340 350"
         },
         {
             "key": 32,
-            "text": "Dual proposal: success pattern and constancy mechanism"
+            "text": "Dual proposal: success pattern and constancy mechanism",
+            "loc": "1080 210"
         },
         {
             "key": 33,
-            "text": "Representations belong in a hierarchy of increasing complexity"
+            "text": "Representations belong in a hierarchy of increasing complexity",
+            "loc": "620 350"
         },
         {
             "key": 34,
-            "text": "The success pattern condition is a sufficient condition on minimal intentionality"
+            "text": "The success pattern condition is a sufficient condition on minimal intentionality",
+            "loc": "760 350"
         },
         {
             "key": 35,
-            "text": "Explanatory role criterion"
+            "text": "Explanatory role criterion",
+            "loc": "900 350"
         },
         {
             "key": 36,
-            "text": "Extended active inference describes the causal reciprocal relationship between an individual organism and its cognitive niche"
+            "text": "Extended active inference describes the causal reciprocal relationship between an individual organism and its cognitive niche",
+            "loc": "60 430"
         },
         {
             "key": 37,
-            "text": "Minimizing free energy is a necessary condition on life"
+            "text": "Minimizing free energy is a necessary condition on life",
+            "loc": "200 430"
         },
         {
             "key": 38,
-            "text": "Minimizing free energy is sufficient for life"
+            "text": "Minimizing free energy is sufficient for life",
+            "loc": "340 430"
         },
         {
             "key": 39,
-            "text": "Minimizing expected free energy requires sophisticated capacities for counterfactual reasoning"
+            "text": "Minimizing expected free energy requires sophisticated capacities for counterfactual reasoning",
+            "loc": "480 430"
         },
         {
             "key": 40,
-            "text": "Cognitive agents are those that perform counterfactual active inference"
+            "text": "Cognitive agents are those that perform counterfactual active inference",
+            "loc": "620 430"
         },
         {
             "key": 41,
-            "text": "Allostasis is sufficient for cognition"
+            "text": "Allostasis is sufficient for cognition",
+            "loc": "760 430"
         },
         {
             "key": 42,
-            "text": "FEP models exacerbate a trade-off between generality and biological plausibility"
+            "text": "FEP models exacerbate a trade-off between generality and biological plausibility",
+            "loc": "900 430"
         },
         {
             "key": 43,
-            "text": "Assumptions such as ergoditicity and NESS are implausible of biological systems"
+            "text": "Assumptions such as ergoditicity and NESS are implausible of biological systems",
+            "loc": "60 510"
         },
         {
             "key": 44,
-            "text": "Neurons are not relays"
+            "text": "Neurons are not relays",
+            "loc": "200 510"
         },
         {
             "key": 45,
-            "text": "Signals bear different involvement relations with world affairs"
+            "text": "Signals bear different involvement relations with world affairs",
+            "loc": "340 510"
         },
         {
             "key": 46,
-            "text": "Incrementalism about the origin of natural language"
+            "text": "Incrementalism about the origin of natural language",
+            "loc": "480 510"
         },
         {
             "key": 47,
-            "text": "Simple Coordination Thesis"
+            "text": "Simple Coordination Thesis",
+            "loc": "620 510"
         }
     ],
     "linkDataArray": [
         {
             "from": 32,
-            "to": 11
+            "to": 11,
+            "points": [
+                1020,
+                210,
+                1010,
+                210,
+                1010,
+                210,
+                1010,
+                148,
+                692,
+                148,
+                692,
+                90,
+                670,
+                90,
+                660,
+                90
+            ]
         },
         {
             "from": 32,
-            "to": 12
+            "to": 12,
+            "points": [
+                1080,
+                240,
+                1080,
+                250,
+                1080,
+                340,
+                1050,
+                340,
+                1050,
+                430,
+                1050,
+                440
+            ]
         },
         {
             "from": 17,
-            "to": 18
+            "to": 18,
+            "points": [
+                490,
+                320,
+                490,
+                310,
+                490,
+                270,
+                480,
+                270,
+                480,
+                230,
+                480,
+                220
+            ]
         },
         {
             "from": 13,
-            "to": 21
+            "to": 21,
+            "points": [
+                760,
+                -40,
+                760,
+                -30,
+                760,
+                -28,
+                828,
+                -28,
+                828,
+                148,
+                900,
+                148,
+                900,
+                150,
+                900,
+                160
+            ]
         },
         {
             "from": 13,
-            "to": 22
+            "to": 22,
+            "points": [
+                720,
+                -40,
+                720,
+                -30,
+                720,
+                -28,
+                692,
+                -28,
+                692,
+                -42,
+                -147.8000030517578,
+                -42,
+                -147.8000030517578,
+                270,
+                130,
+                270,
+                120,
+                270
+            ]
         },
         {
             "from": 14,
-            "to": 23
+            "to": 23,
+            "points": [
+                900,
+                80,
+                900,
+                70,
+                900,
+                68,
+                1030,
+                68,
+                1030,
+                10,
+                1030,
+                0
+            ]
         },
         {
             "from": 14,
-            "to": 24
+            "to": 24,
+            "points": [
+                960,
+                110,
+                970,
+                110,
+                1070,
+                110,
+                1070,
+                85,
+                1070,
+                60,
+                1070,
+                50
+            ]
         },
         {
             "from": 25,
-            "to": 26
+            "to": 26,
+            "points": [
+                -280,
+                130,
+                -280,
+                140,
+                -280,
+                275,
+                -250,
+                275,
+                -250,
+                410,
+                -250,
+                420
+            ]
         },
         {
             "from": 25,
-            "to": 27
+            "to": 27,
+            "points": [
+                -220,
+                100,
+                -210,
+                100,
+                -185,
+                100,
+                -185,
+                90,
+                -160,
+                90,
+                -150,
+                90
+            ]
         },
         {
             "from": 25,
-            "to": 30
+            "to": 30,
+            "points": [
+                -260,
+                130,
+                -260,
+                140,
+                -260,
+                225,
+                -130,
+                225,
+                -130,
+                310,
+                -130,
+                320
+            ]
         }
     ]
 }</textarea>
 <p class="text-xs">GoJS version 2.2.11. Copyright 1998-2022 by Northwoods Software.</p></div>
 <p><a href="https://github.com/NorthwoodsSoftware/GoJS/blob/master/samples/blockEditor.html" target="_blank">View this sample page's source on GitHub</a></p></div>
+<script id="save_json">
+function saveTextAsFile() {
+    
+  // Dump the current model first
+  save()
+    
+  // Get the current text. Must be value, not innerHTML
+  var textArea = document.getElementById('mySavedModel');
+  var textToWrite = textArea.value;
+  
+  var textFileAsBlob = new Blob([ textToWrite ], { type: 'text/plain' });
+  var fileNameToSaveAs = "hyper2gojs.json"; //filename.extension
+
+  var downloadLink = document.createElement("a");
+  downloadLink.download = fileNameToSaveAs;
+  downloadLink.innerHTML = "Download File";
+  if (window.webkitURL != null) {
+    // Chrome allows the link to be clicked without actually adding it to the DOM.
+    downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+  } else {
+    // Firefox requires the link to be added to the DOM before it can be clicked.
+    downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+    downloadLink.onclick = destroyClickedElement;
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+  }
+
+  downloadLink.click();
+}
+
+var button = document.getElementById('save');
+button.addEventListener('click', saveTextAsFile);
+
+function destroyClickedElement(event) {
+  // remove the link from the DOM
+  document.body.removeChild(event.target);
+}
+</script>
 </body>
 </html>
