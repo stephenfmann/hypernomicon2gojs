@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<records version="1.6" xmlns="org.hypernomicon">
+
+<record type="position" id="1">
+  <creation_date>2021-06-22T16:44:33.483666+02:00</creation_date>
+  <modified_date>2021-06-22T17:03:38.5807641+02:00</modified_date>
+  <view_date>2021-12-29T12:27:30.2709239+01:00</view_date>
+  <name>Linguistic nativism</name>
+  <debate id="3">Linguistic nativism</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;"human infants&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;have at least some linguistically specific innate knowledge." (Pullum &amp;amp; Scholz 2002:10)&lt;/span&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+</record>
+
+<record type="position" id="2" search_key="libertarian">
+  <creation_date>2021-06-28T11:40:57.7791986+02:00</creation_date>
+  <modified_date>2021-06-28T11:47:17.122261+02:00</modified_date>
+  <view_date>2021-06-29T12:49:39.3780275+02:00</view_date>
+  <name>Libertarianism</name>
+  <debate id="5">Free Will</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Libertarianism accepts that free will is incompatible with determinism, but holds that determinism is false, resolving the Free Will Paradox in a way that preserves free will.&lt;/font&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="5">record</display_item>
+</record>
+
+<record type="position" id="3">
+  <creation_date>2021-07-06T16:58:28.0121377+02:00</creation_date>
+  <modified_date>2021-07-06T16:58:40.0928299+02:00</modified_date>
+  <view_date>2022-06-22T18:10:39.0202488+02:00</view_date>
+  <name>Teleosemantics</name>
+  <debate id="4">Philosophy</debate>
+  <hub id="1"></hub>
+</record>
+
+<record type="position" id="4">
+  <creation_date>2021-06-29T12:50:29.4345752+02:00</creation_date>
+  <modified_date>2021-06-29T13:00:22.9775897+02:00</modified_date>
+  <view_date>2021-07-06T15:47:13.7220448+02:00</view_date>
+  <name>FEP is not truth-apt because it designates a model structure</name>
+  <debate id="10">Is FEP falsifiable?</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt; 
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt; 
+ &lt;/head&gt; 
+ &lt;body contenteditable="true"&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Andrews (2021:1): "&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;I propose that the FEP be reserved to designate a model&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;structure, to which philosophers and scientists add various construals, leading to a&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;plethora of models based on the formal structure of the FEP.&lt;/span&gt;&lt;font face="Arial" size="2"&gt;"&lt;/font&gt;&lt;/p&gt; 
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="10">record</display_item>
+  <key_work type="work" id="3">Andrews 2021</key_work>
+</record>
+
+<record type="position" id="5">
+  <creation_date>2021-07-06T17:44:39.0311114+02:00</creation_date>
+  <modified_date>2021-07-06T17:44:46.4301214+02:00</modified_date>
+  <view_date>2021-07-15T17:03:33.3404052+02:00</view_date>
+  <name>Conceptual analysis is useful</name>
+  <debate id="11">Conceptual analysis</debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="11">record</display_item>
+</record>
+
+<record type="position" id="6">
+  <creation_date>2021-07-15T17:03:41.8056689+02:00</creation_date>
+  <modified_date>2021-07-15T17:15:39.5490852+02:00</modified_date>
+  <view_date>2021-07-15T17:15:39.5730206+02:00</view_date>
+  <name>Pearl blankets vs Friston blankets</name>
+  <debate id="12">Markov blankets</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt; 
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt; 
+ &lt;/head&gt; 
+ &lt;body contenteditable="true"&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;The original epistemic concept of a Markov blanket (aka 'Pearl blanket') should be distinguished from the ontic concept nowadays employed in active inference (aka 'Friston blanket').&lt;/font&gt;&lt;/p&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Bruineberg et al 2020:20:&amp;nbsp;&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;"what was once an abstract mathematical construct used to describe&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;conditional independence in graphical models came to be seen as a physical entity that&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;somehow &lt;span style="font-style: italic;"&gt;causes&lt;/span&gt; conditional independence. This latter interpretation has potentially&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;interesting philosophical implications, but does not follow straightforwardly from the&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;former mathematical construct."&lt;/span&gt;&lt;/p&gt; 
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="12">record</display_item>
+</record>
+
+<record type="position" id="7">
+  <creation_date>2021-08-16T11:52:54.3207712+02:00</creation_date>
+  <modified_date>2021-08-16T11:53:20.0567052+02:00</modified_date>
+  <view_date>2021-08-16T11:53:20.0916481+02:00</view_date>
+  <name>Generalizations are affected by the structure of the hypothesis space</name>
+  <debate id="14">Reasoning</debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="14">record</display_item>
+  <key_work type="work" id="27">Voorspoels et al 2015</key_work>
+</record>
+
+<record type="position" id="8">
+  <creation_date>2021-09-14T11:53:08.9109303+02:00</creation_date>
+  <modified_date>2021-09-14T11:54:50.0578046+02:00</modified_date>
+  <view_date>2021-09-15T09:58:17.7355739+02:00</view_date>
+  <name>Linguistic Realism</name>
+  <debate id="2">Linguistics</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Natural languages are abstract objects, as opposed to concrete psychological or acoustic ones.&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;/p&gt;
+  &lt;ul&gt;
+   &lt;li&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;1991: https://www.jstor.org/stable/25001444?seq=1#metadata_info_tab_contents&lt;/span&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;1995: http://cogprints.org/256/1/realism.htm&lt;/span&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;2018: https://benjamins.com/catalog/slcs.196&lt;/span&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="2">record</display_item>
+</record>
+
+<record type="position" id="9" search_key="Generalized Darwinism">
+  <creation_date>2021-09-20T16:19:54.5932657+02:00</creation_date>
+  <modified_date>2021-09-20T16:20:58.072409+02:00</modified_date>
+  <view_date>2021-09-21T11:11:38.4654318+02:00</view_date>
+  <name>Generalized Darwinism</name>
+  <debate id="15">Economics</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt; 
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt; 
+ &lt;/head&gt; 
+ &lt;body contenteditable="true"&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Hodgson &amp;amp; Knudsen 2006:2: "&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;ongoing change in [a broad class of] systems is inevitably&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;Darwinian in the sense that it must involve Darwin’s central principles of variation, inheritance&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;and selection.&lt;/span&gt;&lt;font face="Arial" size="2"&gt;"&lt;/font&gt;&lt;/p&gt; 
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="15">record</display_item>
+</record>
+
+<record type="position" id="10">
+  <creation_date>2021-09-21T13:28:10.3740576+02:00</creation_date>
+  <modified_date>2021-09-21T13:29:08.1744485+02:00</modified_date>
+  <view_date>2021-09-21T13:29:08.2319031+02:00</view_date>
+  <name>Chunking constrains the evolution of linguistic structure</name>
+  <debate id="16">Evolutionary linguistics</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Isbilen &amp;amp; Christiansen 2020:716: "&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;a significant constraint on the evolution of linguistic structure stems from online chunking processes that enable the construction of multilevel representations of incoming input in real time."&lt;/span&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="16">record</display_item>
+  <key_work type="work" id="45">Isbilen &amp; Christiansen 2020</key_work>
+</record>
+
+<record type="position" id="11" search_key="success pattern condition">
+  <creation_date>2021-11-03T11:58:20.6436397+01:00</creation_date>
+  <modified_date>2022-05-19T15:49:51.9289105+02:00</modified_date>
+  <view_date>2022-05-19T15:49:51.9329056+02:00</view_date>
+  <name>The success pattern condition is a necessary condition on intentionality</name>
+  <debate id="19">Minimal conditions for intentionality</debate>
+  <larger_position id="32">Dual proposal: success pattern and constancy mechanism</larger_position>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;de Souza Filho 2022:1: "a state represents a given external feature provided that&amp;nbsp;&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;there is a success pattern present in the behavioural output, and the system uses this state as a proxy for the presence of this&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;external feature.&lt;/span&gt;&lt;font face="Arial" size="2"&gt;"&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;de Souza Filho 2022:7 cites the following authors as holding this position: Ramsey 1990, White 1990, Millikan 2004, Papineau 1993, Papineau 2017.&lt;/font&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="19">record</display_item>
+</record>
+
+<record type="position" id="12" search_key="constancy mechanism condition">
+  <creation_date>2021-11-03T11:59:27.4360519+01:00</creation_date>
+  <modified_date>2022-05-19T16:13:14.6575274+02:00</modified_date>
+  <view_date>2022-05-19T16:11:12.9424514+02:00</view_date>
+  <name>The constancy mechanism condition is a necessary condition on intentionality</name>
+  <debate id="19">Minimal conditions for intentionality</debate>
+  <larger_position id="32">Dual proposal: success pattern and constancy mechanism</larger_position>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;d&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;e Souza Filho 2022:1: "a state is representational provided that the system employs a constancy mechanism in its production."&lt;/span&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;de Souza Filho 2022:11: "&lt;span style="font-weight: bold;"&gt;&lt;span style="text-decoration: underline;"&gt;Constancy mechanism condition.&lt;/span&gt; &lt;/span&gt;A sensory state represents an external feature provided that the sensory system employs a constancy mechanism in its production, such that the production of the state remains constant when the external feature obtains, despite the variety of proximal stimuli reaching the system's sensory apparatus."&lt;/span&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="19">record</display_item>
+</record>
+
+<record type="position" id="13">
+  <creation_date>2022-03-02T12:04:21.051938+01:00</creation_date>
+  <modified_date>2022-03-02T12:04:26.0983373+01:00</modified_date>
+  <view_date>2022-03-02T14:53:37.094214+01:00</view_date>
+  <name>Beliefs are real</name>
+  <debate id="20">Realism about belief</debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="20">record</display_item>
+</record>
+
+<record type="position" id="14">
+  <creation_date>2022-03-02T12:04:30.2913732+01:00</creation_date>
+  <modified_date>2022-03-02T12:04:35.5307933+01:00</modified_date>
+  <view_date>2022-03-02T12:04:35.5337873+01:00</view_date>
+  <name>Beliefs are not real</name>
+  <debate id="20">Realism about belief</debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="20">record</display_item>
+</record>
+
+<record type="position" id="15">
+  <creation_date>2022-03-02T12:04:45.7873061+01:00</creation_date>
+  <modified_date>2022-03-02T14:35:59.6123911+01:00</modified_date>
+  <view_date>2022-03-02T14:35:59.6163484+01:00</view_date>
+  <name>Binarism: beliefs are either real or not real</name>
+  <debate id="20">Realism about belief</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt; 
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt; 
+ &lt;/head&gt; 
+ &lt;body contenteditable="true"&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;This is really a kind of meta-position; it doesn't sit logically equivalent to its siblings within this debate, rather it determines which positions &lt;span style="font-style: italic;"&gt;can&lt;/span&gt;&amp;nbsp;coexist in the debate.&lt;/font&gt;&lt;/p&gt; 
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="20">record</display_item>
+</record>
+
+<record type="position" id="16">
+  <creation_date>2022-03-02T14:13:58.6040193+01:00</creation_date>
+  <modified_date>2022-03-02T14:14:19.8192242+01:00</modified_date>
+  <view_date>2022-03-02T14:21:13.5921841+01:00</view_date>
+  <name>Realism about centres of gravity</name>
+  <debate id="22">Centres of gravity</debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="22">record</display_item>
+</record>
+
+<record type="position" id="17">
+  <creation_date>2022-03-02T14:24:27.020681+01:00</creation_date>
+  <modified_date>2022-03-02T14:33:09.8524214+01:00</modified_date>
+  <view_date>2022-03-02T14:33:09.8574027+01:00</view_date>
+  <name>Metaphysical vs scientific approach to abstract objects</name>
+  <debate id="23">Abstract objects</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt; 
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt; 
+ &lt;/head&gt; 
+ &lt;body contenteditable="true"&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Dennett 1991:28: "The question of whether abstract objects are real -- the question of whether or not "one should be a realist about them" -- can take two different paths, which we might call the &lt;span style="font-weight: bold;"&gt;metaphysical&lt;/span&gt; and the &lt;span style="font-weight: bold;"&gt;scientific&lt;/span&gt;."&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2" style="font-weight: bold;"&gt;Metaphysical: &lt;/font&gt;&lt;font face="Arial" size="2"&gt;"&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;The metaphysical path simply concerns&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;the reality or existence of abstract objects generally, and does not&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;distinguish them in terms of their scientific utility.&lt;/span&gt;&lt;font face="Arial" size="2"&gt;" (Dennett 1991:28) Examples: centre of population of United States; Dennett's Lost Sock Centre.&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2" style="font-weight: bold;"&gt;Scientific&lt;/font&gt;&lt;font face="Arial" size="2"&gt;: "[Objects are real when] they are (somehow) &lt;span style="font-style: italic;"&gt;good&lt;/span&gt;&amp;nbsp;abstract objects. They deserve to be taken seriously, learned about, used.&amp;nbsp;&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;If we go so far as to distinguish them as &lt;span style="font-style: italic;"&gt;real&lt;/span&gt; (contrasting them, perhaps, with those abstract objects which are &lt;span style="font-style: italic;"&gt;bogus&lt;/span&gt;), that is because we think &lt;span style="font-weight: bold;"&gt;they serve in perspicuous representations of real forces, "natural" properties, and the like&lt;/span&gt;." (Dennett 1991:29)&lt;/span&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt; 
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="23">record</display_item>
+</record>
+
+<record type="position" id="18">
+  <creation_date>2022-03-02T14:26:49.7074428+01:00</creation_date>
+  <modified_date>2022-03-02T14:34:11.7878201+01:00</modified_date>
+  <view_date>2022-03-02T14:34:11.7928091+01:00</view_date>
+  <name>Pro-scientific approach</name>
+  <larger_position id="17">Metaphysical vs scientific approach to abstract objects</larger_position>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt; 
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt; 
+ &lt;/head&gt; 
+ &lt;body contenteditable="true"&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;We should be more interested in the scientific approach.&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Dennett 1991:28: "[we should be] more interested in the scientific path to realism".&lt;/font&gt;&lt;/p&gt; 
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="position" id="17">record</display_item>
+</record>
+
+<record type="position" id="19">
+  <creation_date>2022-03-02T14:36:07.5653354+01:00</creation_date>
+  <modified_date>2022-03-02T14:54:33.2763813+01:00</modified_date>
+  <view_date>2022-03-02T14:54:33.2803695+01:00</view_date>
+  <name>Mild realism: Beliefs are abstract objects</name>
+  <debate id="20">Realism about belief</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt; 
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt; 
+ &lt;/head&gt; 
+ &lt;body contenteditable="true"&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Dennett 1991:29: "I have claimed that beliefs are best considered to be abstract objects rather like centres of gravity."&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;Dennett 1991:30 attributes this position to himself.&lt;/span&gt;&lt;/p&gt; 
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="20">record</display_item>
+  <key_work type="work" id="77">Dennett 1991</key_work>
+</record>
+
+<record type="position" id="20">
+  <creation_date>2022-03-02T14:43:11.6287774+01:00</creation_date>
+  <modified_date>2022-03-02T15:22:10.5398876+01:00</modified_date>
+  <view_date>2022-04-01T12:00:02.7343426+02:00</view_date>
+  <name>Mild realism</name>
+  <debate id="23">Abstract objects</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt; 
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt; 
+ &lt;/head&gt; 
+ &lt;body contenteditable="true"&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Dennett 1991:29: "&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;My aim on this&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;occasion is not so much to prove that my intermediate doctrine&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;about the reality of psychologcal states is right, but just that it is&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;quite possibly right, because a parallel doctrine is demonstrably right&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;about some simpler cases.&lt;/span&gt;&lt;font face="Arial" size="2"&gt;"&lt;/font&gt;&lt;/p&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Dennett 1991:32: "...in the root case a pattern is "by definition" a candidate for pattern &lt;span style="font-style: italic;"&gt;recognition&lt;/span&gt;."&lt;/font&gt;&lt;/p&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Dennett 1991:&lt;/font&gt;&lt;span style="font-size: 10pt; font-family: Arial;"&gt;34: "&lt;/span&gt;&lt;span style="font-size: 10pt; font-family: Arial;"&gt;A pattern exists in some data -- is real -- if&amp;nbsp;&lt;span style="font-style: italic;"&gt;there is&lt;/span&gt;&amp;nbsp;a description of&amp;nbsp;&lt;/span&gt;&lt;span style="font-size: 10pt; font-family: Arial;"&gt;the data that is more efficient than the bit map, whether or not&amp;nbsp;&lt;/span&gt;&lt;span style="font-size: 10pt; font-family: Arial;"&gt;anyone can concoct it.&lt;/span&gt;&lt;span style="font-size: 10pt; font-family: Arial;"&gt;"&lt;/span&gt;&lt;/p&gt; 
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="23">record</display_item>
+</record>
+
+<record type="position" id="21">
+  <creation_date>2022-03-02T14:52:53.0612359+01:00</creation_date>
+  <modified_date>2022-03-02T14:53:48.2085626+01:00</modified_date>
+  <view_date>2022-03-02T14:57:24.0071467+01:00</view_date>
+  <name>Industrial-strength Realism</name>
+  <larger_position id="13">Beliefs are real</larger_position>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Dennett 1991:30 attributes this position to Fodor.&lt;/font&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="20">record</display_item>
+</record>
+
+<record type="position" id="22">
+  <creation_date>2022-03-02T14:53:51.7481868+01:00</creation_date>
+  <modified_date>2022-03-02T14:54:03.5156179+01:00</modified_date>
+  <view_date>2022-03-02T14:54:03.5186124+01:00</view_date>
+  <name>Regular strength realism</name>
+  <larger_position id="13">Beliefs are real</larger_position>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;Dennett 1991:30 attributes this position to Davidson.&lt;/span&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="position" id="13">record</display_item>
+</record>
+
+<record type="position" id="23">
+  <creation_date>2022-03-02T14:54:39.132955+01:00</creation_date>
+  <modified_date>2022-03-02T14:55:09.7392971+01:00</modified_date>
+  <view_date>2022-03-02T14:55:09.7432917+01:00</view_date>
+  <name>Milder-than-mild irrealism</name>
+  <larger_position id="14">Beliefs are not real</larger_position>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;Dennett 1991:30 attributes this position to Rorty, in which "the pattern is &lt;span style="font-style: italic;"&gt;only&lt;/span&gt;&amp;nbsp;in the eyes of the beholders".&lt;/span&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="position" id="14">record</display_item>
+</record>
+
+<record type="position" id="24">
+  <creation_date>2022-03-02T14:55:14.708161+01:00</creation_date>
+  <modified_date>2022-03-02T14:55:26.5721718+01:00</modified_date>
+  <view_date>2022-03-02T14:55:26.5751993+01:00</view_date>
+  <name>Eliminative materialism</name>
+  <larger_position id="14">Beliefs are not real</larger_position>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;Dennett 1991:30 attributes this position to Paul Churchland.&lt;/span&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="position" id="14">record</display_item>
+</record>
+
+<record type="position" id="25" search_key="interventionism; manipulationism">
+  <creation_date>2022-04-01T12:01:30.6326067+02:00</creation_date>
+  <modified_date>2022-04-01T12:04:55.0941818+02:00</modified_date>
+  <view_date>2022-04-08T11:22:38.3666809+02:00</view_date>
+  <name>Interventionism</name>
+  <debate id="25">Causal Explanation</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt; 
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt; 
+ &lt;/head&gt; 
+ &lt;body contenteditable="true"&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Causal explanation is distinguished by its relevance for potential interventions&lt;/font&gt;&lt;/p&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Woodward: Causal explanation provides information about potential manipulations.&lt;/font&gt;&lt;/p&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;McElreath: to know a cause is to be able to predict the outcome of an intervention&lt;/font&gt;&lt;/p&gt; 
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="25">record</display_item>
+  <key_work type="work" id="83">Woodward 2003</key_work>
+  <key_work type="work" id="65">McElreath 2020</key_work>
+  <key_work type="work" id="84">Woodward 2003a</key_work>
+</record>
+
+<record type="position" id="26" search_key="^i-theor">
+  <creation_date>2022-04-08T11:21:13.4232457+02:00</creation_date>
+  <modified_date>2022-06-10T11:08:55.6180339+02:00</modified_date>
+  <view_date>2022-06-10T11:08:55.624048+02:00</view_date>
+  <name>i-theories</name>
+  <larger_position id="25">Interventionism</larger_position>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Interventionist theories that take the concepts of &lt;span style="font-weight: bold;"&gt;intervention&lt;/span&gt;&amp;nbsp;and &lt;span style="font-weight: bold;"&gt;cause&lt;/span&gt;&amp;nbsp;to be interdefined.&lt;/font&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="position" id="25">record</display_item>
+</record>
+
+<record type="position" id="27" search_key="p-theor">
+  <creation_date>2022-04-08T11:21:46.7461156+02:00</creation_date>
+  <modified_date>2022-04-08T11:22:29.7115203+02:00</modified_date>
+  <view_date>2022-04-08T11:22:37.06071+02:00</view_date>
+  <name>p-theories</name>
+  <larger_position id="25">Interventionism</larger_position>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Interventionist theories that take the concept of an &lt;span style="font-weight: bold;"&gt;intervention&lt;/span&gt; to be derivative on the concept of a &lt;span style="font-weight: bold;"&gt;cause&lt;/span&gt;, which is primitive.&lt;/font&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="position" id="25">record</display_item>
+</record>
+
+<record type="position" id="28">
+  <creation_date>2022-04-08T12:22:17.0801028+02:00</creation_date>
+  <modified_date>2022-04-08T12:22:44.8007495+02:00</modified_date>
+  <view_date>2022-04-08T12:23:00.1608041+02:00</view_date>
+  <name>Program account</name>
+  <debate id="25">Causal Explanation</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt; 
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt; 
+ &lt;/head&gt; 
+ &lt;body contenteditable="true"&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Jackson &amp;amp; Pettit 1990:108: "&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;the realization of a property may&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;program for the occurrence of an effect without actually contributing to its production.&lt;/span&gt;&lt;font face="Arial" size="2"&gt;"&lt;/font&gt;&lt;/p&gt; 
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="25">record</display_item>
+</record>
+
+<record type="position" id="29">
+  <creation_date>2022-05-02T15:11:05.5767668+02:00</creation_date>
+  <modified_date>2022-05-02T15:11:52.7850444+02:00</modified_date>
+  <view_date>2022-05-02T15:11:05.584747+02:00</view_date>
+  <name>Signalhood requires causation</name>
+  <debate id="19">Minimal conditions for intentionality</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Newton 1993 cited by Woodward 2003:26:&lt;/font&gt;&lt;/p&gt;
+  &lt;blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"&gt;
+   &lt;p&gt;&lt;font face="Arial" size="2"&gt;What constitutes a signal? It is clear from our arguments above that a signal from A to B is anything that can activate a switch at B on command from A. This would necessarily include any transmission of energy or of information. However, there are some motions that are not of that nature. For example, if you hold your finger in front of a light bulb and observe the shadow cast on a distant screen, the speed of the shadow, as you move your finger, is proportional to the distance to the screen. If that distance is large enough, in principle the shadow can move as fast as you please. However, as it rushes from a point A to a point B, both on the screen, it cannot be used to activate a switch at B on command from A. Therefore, a superluminal speed of such a shadow would not violate the relativity-causality based prohibition. There are many other speeds of phenomena in physics that are also free from this limitation.&lt;/font&gt;&lt;/p&gt;
+  &lt;/blockquote&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="19">record</display_item>
+</record>
+
+<record type="position" id="30" search_key="Manipulability theory">
+  <creation_date>2022-05-02T18:39:29.4362501+02:00</creation_date>
+  <modified_date>2022-05-02T18:40:23.5029388+02:00</modified_date>
+  <view_date>2022-05-02T18:40:23.5089295+02:00</view_date>
+  <name>Manipulability theory</name>
+  <larger_position id="25">Interventionism</larger_position>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Woodward 2003:59:&lt;/font&gt;&lt;/p&gt;
+  &lt;blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"&gt;
+   &lt;p&gt;&lt;font face="Arial" size="2"&gt;(M) A necessary and sufficient condition for X to be a (type-level) direct cause of Y with respect to a variable set V is that there be a possible intervention on X that will change Y or the probability distribution of Y when one holds fixed at some value all other variables Zi in V. A necessary and sufficient condition for X to be a (type-level) contributing cause of Y with respect to variable set V is that (i) there be a directed path from X to Y such that each link in this path is a direct causal relationship: that is, a set of variables Z1 . . . Zn such that X is a direct cause of Z1, which is in turn a direct cause of Z2, which is a direct cause of . . . Zn, which is a direct cause of Y, and that (ii) there be some intervention on X that will change Y when all other variables in V that are not on this path are fixed at some value. If there is only one path P from X to Y or if the only alternative path from X to Y besides P contains no intermediate variables (i.e., is direct), then X is a contributing cause of Y as long as there is some intervention on X that will change the value of Y, for some values of the other variables in V.&lt;/font&gt;&lt;/p&gt;
+  &lt;/blockquote&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="position" id="25">record</display_item>
+  <key_work type="work" id="86">Woodward 2003c</key_work>
+</record>
+
+<record type="position" id="31">
+  <creation_date>2022-05-06T20:40:02.5223188+02:00</creation_date>
+  <modified_date>2022-05-06T20:45:35.7644997+02:00</modified_date>
+  <view_date>2022-05-06T20:45:35.7684895+02:00</view_date>
+  <name>Duality of theorem and definition</name>
+  <debate id="26">Philosophy of Mathematics</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt; 
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt; 
+ &lt;/head&gt; 
+ &lt;body contenteditable="true"&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Mendelson 1963 (third edition p.70, first edition p.83): "The topological concepts that have been studied [in the context of metric spaces]&amp;nbsp;&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;must be reintroduced in the context of topological spaces. The procedure for formulating the appropriate definitions of these terms in a topological space is to find, in a metric space, the characterization of the term by means of open sets, &lt;span style="font-weight: bold;"&gt;using in most cases what is a theorem in a metric space as a definition in a topological space&lt;/span&gt;."&lt;/span&gt;&lt;/p&gt; 
+  &lt;p&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt; 
+  &lt;p&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt; 
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="26">record</display_item>
+</record>
+
+<record type="position" id="32" search_key="dual proposal for minimal intentionality">
+  <creation_date>2022-05-19T14:54:42.3977118+02:00</creation_date>
+  <modified_date>2022-05-19T14:56:58.0082846+02:00</modified_date>
+  <view_date>2022-05-19T14:57:19.1282711+02:00</view_date>
+  <name>Dual proposal: success pattern and constancy mechanism</name>
+  <debate id="19">Minimal conditions for intentionality</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;The success pattern condition and the constancy mechanism condition are individually necessary and jointly sufficient for minimal intentionality.&lt;/font&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="19">record</display_item>
+</record>
+
+<record type="position" id="33" search_key="hierarchical representationalism">
+  <creation_date>2022-05-19T15:11:43.3293474+02:00</creation_date>
+  <modified_date>2022-05-19T15:13:48.964238+02:00</modified_date>
+  <view_date>2022-05-19T16:09:19.0451171+02:00</view_date>
+  <name>Representations belong in a hierarchy of increasing complexity</name>
+  <debate id="18">Intentionality</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;This seems to be an uncontroversial claim.&lt;/font&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="18">record</display_item>
+  <key_work type="work" id="54">de Souza Filho 2022</key_work>
+</record>
+
+<record type="position" id="34">
+  <creation_date>2022-05-19T15:20:50.7592726+02:00</creation_date>
+  <modified_date>2022-05-19T15:21:05.3502713+02:00</modified_date>
+  <view_date>2022-05-19T15:21:05.3532683+02:00</view_date>
+  <name>The success pattern condition is a sufficient condition on minimal intentionality</name>
+  <debate id="19">Minimal conditions for intentionality</debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="19">record</display_item>
+</record>
+
+<record type="position" id="35" search_key="explanatory role criterion">
+  <creation_date>2022-05-19T15:26:48.1499941+02:00</creation_date>
+  <modified_date>2022-05-19T15:40:38.9688044+02:00</modified_date>
+  <view_date>2022-05-19T15:40:38.9727997+02:00</view_date>
+  <name>Explanatory role criterion</name>
+  <debate id="19">Minimal conditions for intentionality</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;de Souza Filho 2022:5: For a state to be considered representational, "&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;There should be something that the intentional explanation [i.e. an explanation which affords representational status to the state] is capable of explaining which the non-intentional explanation cannot explain."&lt;/span&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;de Souza Filho 2022 appears to treat the criterion as a necessary and sufficient condition on intentionality.&lt;/span&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="19">record</display_item>
+</record>
+
+<record type="position" id="36">
+  <creation_date>2022-05-25T11:44:05.7552819+02:00</creation_date>
+  <modified_date>2022-05-25T11:44:48.9459525+02:00</modified_date>
+  <view_date>2022-05-25T11:49:36.998261+02:00</view_date>
+  <name>Extended active inference describes the causal reciprocal relationship between an individual organism and its cognitive niche</name>
+  <debate id="27">Extended active inference</debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="27">record</display_item>
+  <key_work type="work" id="101">Fabry 2021</key_work>
+</record>
+
+<record type="position" id="37">
+  <creation_date>2022-05-25T14:13:02.593574+02:00</creation_date>
+  <modified_date>2022-05-25T14:14:03.3606084+02:00</modified_date>
+  <view_date>2022-05-25T14:14:03.3665946+02:00</view_date>
+  <name>Minimizing free energy is a necessary condition on life</name>
+  <debate id="9">The free energy principle</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Minimizing free energy in the past is a necessary condition on being alive now.&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Constant 2021:1: "&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;if you exist, now, under&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;the right conditions, it is because you’ve done something like minimising your free&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;energy.&lt;/span&gt;&lt;font face="Arial" size="2"&gt;"&lt;/font&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="9">record</display_item>
+</record>
+
+<record type="position" id="38">
+  <creation_date>2022-05-25T14:23:47.9370436+02:00</creation_date>
+  <modified_date>2022-05-25T14:24:14.5124945+02:00</modified_date>
+  <view_date>2022-05-25T14:24:14.5154907+02:00</view_date>
+  <name>Minimizing free energy is sufficient for life</name>
+  <debate id="9">The free energy principle</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;[Created to enable Constant 2021 argument against]&lt;/font&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="9">record</display_item>
+</record>
+
+<record type="position" id="39">
+  <creation_date>2022-05-27T11:01:54.6388799+02:00</creation_date>
+  <modified_date>2022-05-27T14:50:50.7082819+02:00</modified_date>
+  <view_date>2022-05-27T14:50:50.7132744+02:00</view_date>
+  <name>Minimizing expected free energy requires sophisticated capacities for counterfactual reasoning</name>
+  <debate id="9">The free energy principle</debate>
+  <debate id="28">Demarcating cognition</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Kiverstein &amp;amp; Sims 2021 attribute this view to Corcoran et al 2020. I skimmed the latter and didn't find it.&lt;/font&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="9">record</display_item>
+</record>
+
+<record type="position" id="40">
+  <creation_date>2022-05-27T14:47:41.1232355+02:00</creation_date>
+  <modified_date>2022-05-27T14:49:10.7447356+02:00</modified_date>
+  <view_date>2022-05-27T14:48:08.6425658+02:00</view_date>
+  <name>Cognitive agents are those that perform counterfactual active inference</name>
+  <debate id="28">Demarcating cognition</debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="8">record</display_item>
+  <key_work type="work" id="105">Corcoran et al 2020</key_work>
+</record>
+
+<record type="position" id="41">
+  <creation_date>2022-05-27T14:51:26.6405964+02:00</creation_date>
+  <modified_date>2022-05-27T14:51:36.5745571+02:00</modified_date>
+  <view_date>2022-06-01T10:55:04.1131153+02:00</view_date>
+  <name>Allostasis is sufficient for cognition</name>
+  <debate id="28">Demarcating cognition</debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="28">record</display_item>
+</record>
+
+<record type="position" id="42">
+  <creation_date>2022-06-01T14:00:12.5171743+02:00</creation_date>
+  <modified_date>2022-06-02T14:40:51.5966537+02:00</modified_date>
+  <view_date>2022-06-02T14:43:06.3726146+02:00</view_date>
+  <name>FEP models exacerbate a trade-off between generality and biological plausibility</name>
+  <debate id="9">The free energy principle</debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="9">record</display_item>
+</record>
+
+<record type="position" id="43">
+  <creation_date>2022-06-01T14:03:21.9327637+02:00</creation_date>
+  <modified_date>2022-06-02T14:31:01.6614084+02:00</modified_date>
+  <view_date>2022-06-02T14:31:34.8977904+02:00</view_date>
+  <name>Assumptions such as ergoditicity and NESS are implausible of biological systems</name>
+  <debate id="9">The free energy principle</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Ergodicity: "&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;However, the application of the ergodic theorem [of Birkhoff 1931] to real systems, whether in physics or biology, presents several challenges (Earman and Rédei 1996), and there are&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small; font-weight: bold;"&gt;good reasons to think that this theorem cannot realistically be applied in the domain&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;&lt;span style="font-weight: bold;"&gt;of biology&lt;/span&gt;.&lt;/span&gt;&lt;font face="Arial" size="2"&gt;"&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;(NB they don't seem to use the term NESS in the manuscript itself. It's possible that "random dynamical attractors" is supposed to be a synonym.)&lt;/font&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="9">record</display_item>
+</record>
+
+<record type="position" id="44">
+  <creation_date>2022-06-10T11:06:33.3147389+02:00</creation_date>
+  <modified_date>2022-06-10T11:07:24.9523496+02:00</modified_date>
+  <view_date>2022-06-10T11:07:24.9573445+02:00</view_date>
+  <name>Neurons are not relays</name>
+  <debate id="30">Neural representation</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Planer &amp;amp; Godfrey-Smith 2021:760: "&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;Neurons do not just propagate activity from one place to another; they&amp;nbsp;&lt;span style="font-style: italic;"&gt;create&lt;/span&gt;&amp;nbsp;new patterns and&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;activity. They do this both in ways that&amp;nbsp;&lt;span style="font-weight: bold;"&gt;admit information-processing description&lt;/span&gt;&amp;nbsp;(inference, filtering) and ways that may not.&lt;/span&gt;&lt;font face="Arial" size="2"&gt;"&lt;/font&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="30">record</display_item>
+  <key_work type="work" id="108">Planer &amp; Godfrey-Smith 2021</key_work>
+</record>
+
+<record type="position" id="45">
+  <creation_date>2022-06-10T11:09:59.1045566+02:00</creation_date>
+  <modified_date>2022-06-10T11:10:43.1822191+02:00</modified_date>
+  <view_date>2022-06-10T11:10:43.1872259+02:00</view_date>
+  <name>Signals bear different involvement relations with world affairs</name>
+  <debate id="18">Intentionality</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;Planer &amp;amp; Godfrey-Smith 2021:763: There are various different involvement relations a sign can have to the world:&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;"This is not a problem&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;that needs to be solved by choosing one kind of involvement between sign and world and saying it is&amp;nbsp;&lt;span style="font-style: italic;"&gt;the&lt;/span&gt;&amp;nbsp;basis of content. Instead, various kinds of sign-world relationship can be recognized."&lt;/span&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="18">record</display_item>
+  <key_work type="work" id="108">Planer &amp; Godfrey-Smith 2021</key_work>
+</record>
+
+<record type="position" id="46">
+  <creation_date>2022-06-10T11:12:30.7236948+02:00</creation_date>
+  <modified_date>2022-06-10T11:12:55.7777663+02:00</modified_date>
+  <view_date>2022-06-10T11:18:31.7369271+02:00</view_date>
+  <name>Incrementalism about the origin of natural language</name>
+  <debate id="31">Origin of Language</debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="31">record</display_item>
+</record>
+
+<record type="position" id="47" search_key="Simple Coordination Thesis">
+  <creation_date>2022-06-16T11:11:54.9393095+02:00</creation_date>
+  <modified_date>2022-06-16T11:17:09.3343165+02:00</modified_date>
+  <view_date>2022-06-16T11:12:35.5373047+02:00</view_date>
+  <name>Simple Coordination Thesis</name>
+  <debate id="32">Evolution of human uniqueness</debate>
+  <debate id="33">Folk psychology</debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Three parts:&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;/p&gt;
+  &lt;ol&gt;
+   &lt;li&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;Our interpretative concepts constitute something like a theory of human cognitive organization: they are a putative description of the wiring-and-connection facts&lt;/span&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;Our interpretative skills depend on this theory, and our ability to deploy it on particular occasions&lt;/span&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;We are often able to successfully explain or anticipate behaviour because this theory is largely true.&lt;/span&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;div&gt;
+   &lt;span style="font-family: Arial; font-size: small;"&gt;&lt;br&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;p&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="32">record</display_item>
+  <key_work type="work" id="113">Sterelny 2003</key_work>
+</record>
+
+
+
+
+
+</records>

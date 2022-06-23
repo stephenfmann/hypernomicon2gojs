@@ -1,0 +1,235 @@
+{
+    "class": "GraphLinksModel",
+    "nodeDataArray": [
+        {
+            "key": 1,
+            "text": "Linguistic nativism"
+        },
+        {
+            "key": 2,
+            "text": "Libertarianism"
+        },
+        {
+            "key": 3,
+            "text": "Teleosemantics"
+        },
+        {
+            "key": 4,
+            "text": "FEP is not truth-apt because it designates a model structure"
+        },
+        {
+            "key": 5,
+            "text": "Conceptual analysis is useful"
+        },
+        {
+            "key": 6,
+            "text": "Pearl blankets vs Friston blankets"
+        },
+        {
+            "key": 7,
+            "text": "Generalizations are affected by the structure of the hypothesis space"
+        },
+        {
+            "key": 8,
+            "text": "Linguistic Realism"
+        },
+        {
+            "key": 9,
+            "text": "Generalized Darwinism"
+        },
+        {
+            "key": 10,
+            "text": "Chunking constrains the evolution of linguistic structure"
+        },
+        {
+            "key": 11,
+            "text": "The success pattern condition is a necessary condition on intentionality"
+        },
+        {
+            "key": 12,
+            "text": "The constancy mechanism condition is a necessary condition on intentionality"
+        },
+        {
+            "key": 13,
+            "text": "Beliefs are real"
+        },
+        {
+            "key": 14,
+            "text": "Beliefs are not real"
+        },
+        {
+            "key": 15,
+            "text": "Binarism: beliefs are either real or not real"
+        },
+        {
+            "key": 16,
+            "text": "Realism about centres of gravity"
+        },
+        {
+            "key": 17,
+            "text": "Metaphysical vs scientific approach to abstract objects"
+        },
+        {
+            "key": 18,
+            "text": "Pro-scientific approach"
+        },
+        {
+            "key": 19,
+            "text": "Mild realism: Beliefs are abstract objects"
+        },
+        {
+            "key": 20,
+            "text": "Mild realism"
+        },
+        {
+            "key": 21,
+            "text": "Industrial-strength Realism"
+        },
+        {
+            "key": 22,
+            "text": "Regular strength realism"
+        },
+        {
+            "key": 23,
+            "text": "Milder-than-mild irrealism"
+        },
+        {
+            "key": 24,
+            "text": "Eliminative materialism"
+        },
+        {
+            "key": 25,
+            "text": "Interventionism"
+        },
+        {
+            "key": 26,
+            "text": "i-theories"
+        },
+        {
+            "key": 27,
+            "text": "p-theories"
+        },
+        {
+            "key": 28,
+            "text": "Program account"
+        },
+        {
+            "key": 29,
+            "text": "Signalhood requires causation"
+        },
+        {
+            "key": 30,
+            "text": "Manipulability theory"
+        },
+        {
+            "key": 31,
+            "text": "Duality of theorem and definition"
+        },
+        {
+            "key": 32,
+            "text": "Dual proposal: success pattern and constancy mechanism"
+        },
+        {
+            "key": 33,
+            "text": "Representations belong in a hierarchy of increasing complexity"
+        },
+        {
+            "key": 34,
+            "text": "The success pattern condition is a sufficient condition on minimal intentionality"
+        },
+        {
+            "key": 35,
+            "text": "Explanatory role criterion"
+        },
+        {
+            "key": 36,
+            "text": "Extended active inference describes the causal reciprocal relationship between an individual organism and its cognitive niche"
+        },
+        {
+            "key": 37,
+            "text": "Minimizing free energy is a necessary condition on life"
+        },
+        {
+            "key": 38,
+            "text": "Minimizing free energy is sufficient for life"
+        },
+        {
+            "key": 39,
+            "text": "Minimizing expected free energy requires sophisticated capacities for counterfactual reasoning"
+        },
+        {
+            "key": 40,
+            "text": "Cognitive agents are those that perform counterfactual active inference"
+        },
+        {
+            "key": 41,
+            "text": "Allostasis is sufficient for cognition"
+        },
+        {
+            "key": 42,
+            "text": "FEP models exacerbate a trade-off between generality and biological plausibility"
+        },
+        {
+            "key": 43,
+            "text": "Assumptions such as ergoditicity and NESS are implausible of biological systems"
+        },
+        {
+            "key": 44,
+            "text": "Neurons are not relays"
+        },
+        {
+            "key": 45,
+            "text": "Signals bear different involvement relations with world affairs"
+        },
+        {
+            "key": 46,
+            "text": "Incrementalism about the origin of natural language"
+        },
+        {
+            "key": 47,
+            "text": "Simple Coordination Thesis"
+        }
+    ],
+    "linkDataArray": [
+        {
+            "from": 32,
+            "to": 11
+        },
+        {
+            "from": 32,
+            "to": 12
+        },
+        {
+            "from": 17,
+            "to": 18
+        },
+        {
+            "from": 13,
+            "to": 21
+        },
+        {
+            "from": 13,
+            "to": 22
+        },
+        {
+            "from": 14,
+            "to": 23
+        },
+        {
+            "from": 14,
+            "to": 24
+        },
+        {
+            "from": 25,
+            "to": 26
+        },
+        {
+            "from": 25,
+            "to": 27
+        },
+        {
+            "from": 25,
+            "to": 30
+        }
+    ]
+}
