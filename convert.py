@@ -4,6 +4,14 @@ import json
 import argparse
 from bs4 import BeautifulSoup as bs
 
+## Configure display format
+POSITION_FIGURE = "CreateRequest"
+
+## Position IDs need to be distinct from arugment IDs.
+## Offset argument IDs by this number.
+## Should be robust unless you have more than this number of positions.
+ARGUMENT_OFFSET = 10000
+ARGUMENT_FIGURE = "RoundedRectangle" # default shape for argument nodes
 
 def run(args):
     """
@@ -22,7 +30,7 @@ def run(args):
     """
     
     ## Parse the input
-    nodes,links = parse_xml(args['input'])
+    nodes,links = parse_xml(args)
     
     ## Create JSON
     json_object = create_json(nodes,links)
@@ -37,7 +45,7 @@ def run(args):
     output_html(json_object,args['html'])
     
 
-def parse_xml(fpath_xml):
+def parse_xml(args):
     """
     Get basic info on nodes and links from XML file.
 
@@ -57,20 +65,35 @@ def parse_xml(fpath_xml):
 
     """
     
-    ## Load XML
-    with open(fpath_xml,'r') as f:
-        xml = bs(f.read(), features="xml")
+    ## 1. Positions
+    ## Load Positions XML
+    with open(args['positions'],'r',encoding="utf8") as f:
+        xml_positions = bs(f.read(), features="xml")
     
-    ## Extract the nodes
-    nodes = get_nodes(xml)
+    ## Extract the nodes 
+    nodes_positions = get_nodes_positions(xml_positions)
     
     ## Extract the links
-    links = get_links(xml)
+    links_positions = get_links_positions(xml_positions)
     
+    ## 2. Arguments
+    ## Load Arguments XML
+    with open(args['arguments'],'r',encoding="utf8") as f:
+        xml_arguments = bs(f.read(), features="xml")
+        
+    ## Extract the nodes 
+    nodes_arguments = get_nodes_arguments(xml_arguments)
+    
+    ## Extract the links
+    links_arguments = get_links_arguments(xml_arguments)
+    
+    ## 3. Combine
+    nodes = nodes_positions + nodes_arguments
+    links = links_positions + links_arguments
     
     return nodes,links
 
-def get_nodes(xml):
+def get_nodes_positions(xml):
     """
     From an XML string, return nodes as GoJS JSON list
 
@@ -82,7 +105,7 @@ def get_nodes(xml):
     -------
     nodes : list
         GoJS format of nodes. Example:
-            {"key":25,"loc":"0 0","text":"Interventionism"}
+            {"key":25,"text":"Interventionism"}
 
     """
     
@@ -97,7 +120,8 @@ def get_nodes(xml):
     for record in records_xml:
         record_dict = {
             "key"  : int(record['id']), # the id attribute of the <record> tag
-            "text" : record.find('name').text # the text inside the <name> tag under the <record> tag
+            "text" : record.find('name').text, # the text inside the <name> tag under the <record> tag
+            "figure": POSITION_FIGURE
             }
         
         ## Add this record to the JSON list
@@ -105,7 +129,7 @@ def get_nodes(xml):
     
     return nodes
 
-def get_links(xml):
+def get_links_positions(xml):
     """
     From an XML string, return links as GoJS JSON list
 
@@ -144,6 +168,127 @@ def get_links(xml):
     
     return links
 
+def get_nodes_arguments(xml):
+    """
+    From an XML string, return nodes as GoJS JSON list.
+    IDs for arguments are offset by 10,000 to prevent conflict with position IDs.
+    This will break if you have more than <ARGUMENT_OFFSET> positions!
+
+    Parameters
+    ----------
+    xml : BeautifulSoup parser object
+
+    Returns
+    -------
+    nodes : list
+        GoJS format of nodes. Example:
+            {"key":10001,"text":"Poverty of the Stimulus (Pullum &amp; Scholz 2002)"}
+
+    """
+    
+    ## Initialise JSON list of dicts
+    nodes = []
+    
+    ## Just positions for now
+    ## Later we will include arguments.
+    records_xml = xml.find_all('record',type="argument")
+    
+    ## Loop and add
+    for record in records_xml:
+        if record.find('name'):
+            record_dict = {
+                "key"  : int(record['id'])+ARGUMENT_OFFSET, # the id attribute of the <record> tag
+                "text" : record.find('name').text, # the text inside the <name> tag under the <record> tag
+                "figure" : ARGUMENT_FIGURE
+                }
+            
+            ## Add this record to the JSON list
+            nodes.append(record_dict)
+    
+    return nodes
+
+def get_links_arguments(xml):
+    """
+    From an XML string, return links as GoJS JSON list.
+    Offset argument IDs by <ARGUMENT OFFSET>
+
+    Parameters
+    ----------
+    xml : BeautifulSoup parser object
+
+    Returns
+    -------
+    links : list
+        GoJS format of links between nodes. Example:
+            {"from":25,"to":26}
+
+    """
+    
+    ## 1. Get two lists: arguments that point to positions, and
+    ##     arguments that link to other arguments.
+    ##    An argument may appear in both lists.
+    
+    ## Define complex search function for BeautifulSoup
+    ## Find arguments that point to positions
+    def argument_has_parent_position(tag):
+        return tag.name=='record' and tag.find('position')  is not None
+    
+    ## Get all records with parent positions
+    arguments_with_parent_positions_xml = xml.find_all(argument_has_parent_position)
+    
+    ## Find arguments that point to other arguments
+    def argument_has_parent_argument(tag):
+        return tag.name=='record' and tag.find('counterargument') is not None
+    
+    ## Get all records with parent arguments
+    arguments_with_parent_arguments_xml = xml.find_all(argument_has_parent_argument)
+    
+    ## 2. Build the links list.
+    ## Initialise
+    links = []
+    
+    ## First link arguments to positions
+    for record in arguments_with_parent_positions_xml:
+        
+        ## Create arrow dict object.
+        ## Here the arrow goes from the position to the argument.
+        ## It might be preferable to do it the other way round.
+        arrow_dict = {
+            "from": int(record.find('position')['id']),
+            "to"  : int(record['id'])+ARGUMENT_OFFSET
+            }
+        
+        ## Determine arrow color
+        ## The verdict is determined by the id attribute of the position_verdict tag
+        verdict = int(record.find('position').find('position_verdict')['id'])
+        
+        ## For now, just do green for True, red for everything else
+        if verdict == 1:
+            arrow_dict["color"] = "green"
+        else:
+            arrow_dict["color"] = "red"
+        
+        ## Append arrow to dict
+        links.append(arrow_dict)
+    
+    ## Now link arguments to other arguments
+    for record in arguments_with_parent_arguments_xml:
+        
+        ## Create arrow dict object.
+        ## Here the arrow goes from the original argument to the counterargument.
+        ## It might be preferable to do it the other way round.
+        arrow_dict = {
+            "from": int(record.find('counterargument')['id'])+ARGUMENT_OFFSET,
+            "to"  : int(record['id'])+ARGUMENT_OFFSET
+            }
+        
+        ## Color: assume all counterarguments are red
+        arrow_dict["color"] = "red"
+        
+        links.append(arrow_dict)
+    
+    return links
+
 def create_json(nodes,links):
     """
     From a list of nodes and links, create the GoJS JSON object
@@ -172,7 +317,7 @@ def create_json(nodes,links):
 
 def output_json(json_object,fpath_out):
     
-    with open(fpath_out,'w') as f:
+    with open(fpath_out,'w',encoding="utf8") as f:
         json.dump(
             json_object,
             f,
@@ -198,7 +343,7 @@ def fix_locations(json_object,fpath_json):
     """
     
     ## Get the current HTML file
-    with open(fpath_json,'r') as f:
+    with open(fpath_json,'r',encoding="utf8") as f:
         # html = bs(f.read(), features="lxml")
         json_object_current = json.loads(f.read()) 
     
@@ -300,7 +445,7 @@ def output_html(json_object,fpath_html):
 
     """
     
-    with open(fpath_html,'r') as f:
+    with open(fpath_html,'r',encoding="utf8") as f:
         html = bs(f.read(), features="lxml")
     
     def textarea_model(tag):
@@ -311,7 +456,7 @@ def output_html(json_object,fpath_html):
     textarea.string = json.dumps(json_object,indent=4)
     
     ## Dump HTML
-    with open(fpath_html,'w') as f:
+    with open(fpath_html,'w',encoding="utf8") as f:
         f.write(str(html))
 
 
@@ -322,12 +467,20 @@ def output_html(json_object,fpath_html):
 ## On the command line, python convert.py -h will display this information.
 parser = argparse.ArgumentParser(description="Convert Hypernomicon XML to GoJS JSON.")
 
-## Add the XML input file argument
-parser.add_argument('--input',
-                    metavar='XML_FILEPATH',
+## Add the XML Positions file argument
+parser.add_argument('--positions',
+                    metavar='XML_POSITIONS_FILEPATH',
                     type=str,
                     nargs='?', # zero or one
                     default='Positions.xml' # default to Hypernomicon's Positions file
+                    )
+
+## Add the XML Arguments file argument
+parser.add_argument('--arguments',
+                    metavar='XML_ARGUMENTS_FILEPATH',
+                    type=str,
+                    nargs='?', # zero or one
+                    default='Arguments.xml' # default to Hypernomicon's Arguments file
                     )
 
 ## Add the JSON output file argument

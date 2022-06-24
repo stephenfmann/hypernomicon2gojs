@@ -4,237 +4,470 @@
         {
             "key": 1,
             "text": "Linguistic nativism",
+            "figure": "CreateRequest",
             "loc": "60 30"
         },
         {
             "key": 2,
             "text": "Libertarianism",
+            "figure": "CreateRequest",
             "loc": "200 30"
         },
         {
             "key": 3,
             "text": "Teleosemantics",
+            "figure": "CreateRequest",
             "loc": "340 30"
         },
         {
             "key": 4,
             "text": "FEP is not truth-apt because it designates a model structure",
+            "figure": "CreateRequest",
             "loc": "480 30"
         },
         {
             "key": 5,
             "text": "Conceptual analysis is useful",
+            "figure": "CreateRequest",
             "loc": "620 30"
         },
         {
             "key": 6,
             "text": "Pearl blankets vs Friston blankets",
+            "figure": "CreateRequest",
             "loc": "760 30"
         },
         {
             "key": 7,
             "text": "Generalizations are affected by the structure of the hypothesis space",
+            "figure": "CreateRequest",
             "loc": "900 30"
         },
         {
             "key": 8,
             "text": "Linguistic Realism",
+            "figure": "CreateRequest",
             "loc": "60 110"
         },
         {
             "key": 9,
             "text": "Generalized Darwinism",
+            "figure": "CreateRequest",
             "loc": "200 110"
         },
         {
             "key": 10,
             "text": "Chunking constrains the evolution of linguistic structure",
+            "figure": "CreateRequest",
             "loc": "340 110"
         },
         {
             "key": 11,
             "text": "The success pattern condition is a necessary condition on intentionality",
-            "loc": "600 90"
+            "figure": "CreateRequest",
+            "loc": "-180 560"
         },
         {
             "key": 12,
             "text": "The constancy mechanism condition is a necessary condition on intentionality",
-            "loc": "1050 470"
+            "figure": "CreateRequest",
+            "loc": "1010 560"
         },
         {
             "key": 13,
             "text": "Beliefs are real",
-            "loc": "740 -70"
+            "figure": "CreateRequest",
+            "loc": "720 -90"
         },
         {
             "key": 14,
             "text": "Beliefs are not real",
+            "figure": "CreateRequest",
             "loc": "900 110"
         },
         {
             "key": 15,
             "text": "Binarism: beliefs are either real or not real",
+            "figure": "CreateRequest",
             "loc": "-260 0"
         },
         {
             "key": 16,
             "text": "Realism about centres of gravity",
+            "figure": "CreateRequest",
             "loc": "200 190"
         },
         {
             "key": 17,
             "text": "Metaphysical vs scientific approach to abstract objects",
+            "figure": "CreateRequest",
             "loc": "490 350"
         },
         {
             "key": 18,
             "text": "Pro-scientific approach",
+            "figure": "CreateRequest",
             "loc": "480 190"
         },
         {
             "key": 19,
             "text": "Mild realism: Beliefs are abstract objects",
+            "figure": "CreateRequest",
             "loc": "630 240"
         },
         {
             "key": 20,
             "text": "Mild realism",
+            "figure": "CreateRequest",
             "loc": "760 190"
         },
         {
             "key": 21,
             "text": "Industrial-strength Realism",
+            "figure": "CreateRequest",
             "loc": "900 190"
         },
         {
             "key": 22,
             "text": "Regular strength realism",
+            "figure": "CreateRequest",
             "loc": "60 270"
         },
         {
             "key": 23,
             "text": "Milder-than-mild irrealism",
+            "figure": "CreateRequest",
             "loc": "1030 -30"
         },
         {
             "key": 24,
             "text": "Eliminative materialism",
+            "figure": "CreateRequest",
             "loc": "1070 20"
         },
         {
             "key": 25,
             "text": "Interventionism",
+            "figure": "CreateRequest",
             "loc": "-280 100"
         },
         {
             "key": 26,
             "text": "i-theories",
-            "loc": "-250 450"
+            "figure": "CreateRequest",
+            "loc": "-530 220"
         },
         {
             "key": 27,
             "text": "p-theories",
-            "loc": "-90 90"
+            "figure": "CreateRequest",
+            "loc": "-510 110"
         },
         {
             "key": 28,
             "text": "Program account",
+            "figure": "CreateRequest",
             "loc": "900 270"
         },
         {
             "key": 29,
             "text": "Signalhood requires causation",
+            "figure": "CreateRequest",
             "loc": "60 350"
         },
         {
             "key": 30,
             "text": "Manipulability theory",
-            "loc": "-130 350"
+            "figure": "CreateRequest",
+            "loc": "-460 -50"
         },
         {
             "key": 31,
             "text": "Duality of theorem and definition",
+            "figure": "CreateRequest",
             "loc": "340 350"
         },
         {
             "key": 32,
             "text": "Dual proposal: success pattern and constancy mechanism",
-            "loc": "1080 210"
+            "figure": "CreateRequest",
+            "loc": "620 590"
         },
         {
             "key": 33,
             "text": "Representations belong in a hierarchy of increasing complexity",
+            "figure": "CreateRequest",
             "loc": "620 350"
         },
         {
             "key": 34,
             "text": "The success pattern condition is a sufficient condition on minimal intentionality",
-            "loc": "760 350"
+            "figure": "CreateRequest",
+            "loc": "670 500"
         },
         {
             "key": 35,
             "text": "Explanatory role criterion",
+            "figure": "CreateRequest",
             "loc": "900 350"
         },
         {
             "key": 36,
             "text": "Extended active inference describes the causal reciprocal relationship between an individual organism and its cognitive niche",
+            "figure": "CreateRequest",
             "loc": "60 430"
         },
         {
             "key": 37,
             "text": "Minimizing free energy is a necessary condition on life",
+            "figure": "CreateRequest",
             "loc": "200 430"
         },
         {
             "key": 38,
             "text": "Minimizing free energy is sufficient for life",
+            "figure": "CreateRequest",
             "loc": "340 430"
         },
         {
             "key": 39,
             "text": "Minimizing expected free energy requires sophisticated capacities for counterfactual reasoning",
-            "loc": "480 430"
+            "figure": "CreateRequest",
+            "loc": "-370 430"
         },
         {
             "key": 40,
             "text": "Cognitive agents are those that perform counterfactual active inference",
-            "loc": "620 430"
+            "figure": "CreateRequest",
+            "loc": "60 30"
         },
         {
             "key": 41,
             "text": "Allostasis is sufficient for cognition",
+            "figure": "CreateRequest",
             "loc": "760 430"
         },
         {
             "key": 42,
             "text": "FEP models exacerbate a trade-off between generality and biological plausibility",
+            "figure": "CreateRequest",
             "loc": "900 430"
         },
         {
             "key": 43,
             "text": "Assumptions such as ergoditicity and NESS are implausible of biological systems",
-            "loc": "60 510"
+            "figure": "CreateRequest",
+            "loc": "1280 500"
         },
         {
             "key": 44,
             "text": "Neurons are not relays",
-            "loc": "200 510"
+            "figure": "CreateRequest",
+            "loc": "200 30"
         },
         {
             "key": 45,
             "text": "Signals bear different involvement relations with world affairs",
-            "loc": "340 510"
+            "figure": "CreateRequest",
+            "loc": "60 110"
         },
         {
             "key": 46,
             "text": "Incrementalism about the origin of natural language",
-            "loc": "480 510"
+            "figure": "CreateRequest",
+            "loc": "1290 290"
         },
         {
             "key": 47,
             "text": "Simple Coordination Thesis",
-            "loc": "620 510"
+            "figure": "CreateRequest",
+            "loc": "200 110"
+        },
+        {
+            "key": 10001,
+            "text": "Poverty of the Stimulus (Pullum & Scholz 2002)",
+            "figure": "RoundedRectangle",
+            "loc": "60 30"
+        },
+        {
+            "key": 10002,
+            "text": "Empirical premise of APS argument has not been demonstrated",
+            "figure": "RoundedRectangle",
+            "loc": "200 30"
+        },
+        {
+            "key": 10004,
+            "text": "Poverty of the Stimulus (Hornstein & Lightfoot 1981)",
+            "figure": "RoundedRectangle",
+            "loc": "1260 10"
+        },
+        {
+            "key": 10005,
+            "text": "Self-contradictory",
+            "figure": "RoundedRectangle",
+            "loc": "480 30"
+        },
+        {
+            "key": 10006,
+            "text": "Campbell's argument for Libertarianism",
+            "figure": "RoundedRectangle",
+            "loc": "620 30"
+        },
+        {
+            "key": 10007,
+            "text": "Consciousness argument against teleosemantics",
+            "figure": "RoundedRectangle",
+            "loc": "760 30"
+        },
+        {
+            "key": 10008,
+            "text": "Relational response",
+            "figure": "RoundedRectangle",
+            "loc": "1180 -130"
+        },
+        {
+            "key": 10009,
+            "text": "Millikan's argument against the view that Conceptual analysis is useful",
+            "figure": "RoundedRectangle",
+            "loc": "200 110"
+        },
+        {
+            "key": 10010,
+            "text": "Argument for Pearl blankets vs Friston blankets",
+            "figure": "RoundedRectangle",
+            "loc": "340 110"
+        },
+        {
+            "key": 10011,
+            "text": "Dennett's argument against Binarism: beliefs are either real or not real",
+            "figure": "RoundedRectangle",
+            "loc": "480 110"
+        },
+        {
+            "key": 10012,
+            "text": "Dretske's argument for Realism about centres of gravity",
+            "figure": "RoundedRectangle",
+            "loc": "-140 -120"
+        },
+        {
+            "key": 10013,
+            "text": "Smith's argument against Realism about centres of gravity",
+            "figure": "RoundedRectangle",
+            "loc": "760 110"
+        },
+        {
+            "key": 10014,
+            "text": "Woodward's intuitive argument for Interventionism",
+            "figure": "RoundedRectangle",
+            "loc": "-260 300"
+        },
+        {
+            "key": 10015,
+            "text": "Woodward's payoff argument for Interventionism",
+            "figure": "RoundedRectangle",
+            "loc": "-130 300"
+        },
+        {
+            "key": 10016,
+            "text": "Baumgartner's regress argument against i-theories",
+            "figure": "RoundedRectangle",
+            "loc": "-530 360"
+        },
+        {
+            "key": 10017,
+            "text": "de Souza Filho's argument that the success pattern condition is a necessary condition on intentionality",
+            "figure": "RoundedRectangle",
+            "loc": "-450 540"
+        },
+        {
+            "key": 10018,
+            "text": "de Souza Filho's argument that the constancy mechanism condition is a necessary condition on intentionality",
+            "figure": "RoundedRectangle",
+            "loc": "1010 660"
+        },
+        {
+            "key": 10019,
+            "text": "de Souza Filho's argument for the dual proposal",
+            "figure": "RoundedRectangle",
+            "loc": "760 190"
+        },
+        {
+            "key": 10020,
+            "text": "The liberality objection",
+            "figure": "RoundedRectangle",
+            "loc": "500 510"
+        },
+        {
+            "key": 10021,
+            "text": "The universal acid counterargument",
+            "figure": "RoundedRectangle",
+            "loc": "200 270"
+        },
+        {
+            "key": 10022,
+            "text": "de Souza Filho's intuitive objection",
+            "figure": "RoundedRectangle",
+            "loc": "510 440"
+        },
+        {
+            "key": 10023,
+            "text": "My knee-jerk reaction counterargument",
+            "figure": "RoundedRectangle",
+            "loc": "100 640"
+        },
+        {
+            "key": 10024,
+            "text": "Argument for Extended active inference describes the causal reciprocal relationship between an individual organism and its cognitive niche",
+            "figure": "RoundedRectangle",
+            "loc": "620 270"
+        },
+        {
+            "key": 10025,
+            "text": "Argument that it is false that Minimizing free energy is sufficient for life",
+            "figure": "RoundedRectangle",
+            "loc": "760 270"
+        },
+        {
+            "key": 10026,
+            "text": "Argument that it is false that Minimizing expected free energy requires sophisticated capacities for counterfactual reasoning",
+            "figure": "RoundedRectangle",
+            "loc": "60 350"
+        },
+        {
+            "key": 10027,
+            "text": "Kiverstein & Sims's Argument that Allostasis is sufficient for cognition",
+            "figure": "RoundedRectangle",
+            "loc": "200 350"
+        },
+        {
+            "key": 10028,
+            "text": "Corcoran et al's argument that it is false that Allostasis is sufficient for cognition",
+            "figure": "RoundedRectangle",
+            "loc": "340 350"
+        },
+        {
+            "key": 10029,
+            "text": "Argument that FEP models exacerbate a trade-off between generality and biological plausibility",
+            "figure": "RoundedRectangle",
+            "loc": "480 350"
+        },
+        {
+            "key": 10030,
+            "text": "Colombo & Palacios's argument that assumptions such as ergoditicity and NESS are implausible of biological systems",
+            "figure": "RoundedRectangle",
+            "loc": "1280 610"
+        },
+        {
+            "key": 10031,
+            "text": "Scott-Phillips's argument against Incrementalism about the origin of natural language",
+            "figure": "RoundedRectangle",
+            "loc": "1140 210"
+        },
+        {
+            "key": 10032,
+            "text": "Godfrey-Smith's response to Scott-Phillips's argument against Incrementalism about the origin of natural language",
+            "figure": "RoundedRectangle",
+            "loc": "1290 150"
         }
     ],
     "linkDataArray": [
@@ -242,40 +475,36 @@
             "from": 32,
             "to": 11,
             "points": [
-                1020,
-                210,
-                1010,
-                210,
-                1010,
-                210,
-                1010,
-                148,
-                692,
-                148,
-                692,
-                90,
-                670,
-                90,
-                660,
-                90
+                560,
+                590,
+                550,
+                590,
+                220,
+                590,
+                220,
+                560,
+                -110,
+                560,
+                -120,
+                560
             ]
         },
         {
             "from": 32,
             "to": 12,
             "points": [
-                1080,
-                240,
-                1080,
-                250,
-                1080,
-                340,
-                1050,
-                340,
-                1050,
-                430,
-                1050,
-                440
+                680,
+                590,
+                690,
+                590,
+                815,
+                590,
+                815,
+                560,
+                940,
+                560,
+                950,
+                560
             ]
         },
         {
@@ -300,14 +529,14 @@
             "from": 13,
             "to": 21,
             "points": [
-                760,
-                -40,
-                760,
-                -30,
-                760,
-                -28,
+                720,
+                -60,
+                720,
+                -50,
+                720,
+                -50,
                 828,
-                -28,
+                -50,
                 828,
                 148,
                 900,
@@ -322,24 +551,24 @@
             "from": 13,
             "to": 22,
             "points": [
-                720,
-                -40,
-                720,
-                -30,
-                720,
-                -28,
-                692,
-                -28,
-                692,
-                -42,
-                -147.8000030517578,
-                -42,
-                -147.8000030517578,
-                270,
-                130,
-                270,
-                120,
-                270
+                660,
+                -90,
+                650,
+                -90,
+                652,
+                -90,
+                652,
+                -90,
+                412,
+                -90,
+                412,
+                228,
+                60,
+                228,
+                60,
+                230,
+                60,
+                240
             ]
         },
         {
@@ -387,49 +616,763 @@
                 -280,
                 140,
                 -280,
-                275,
-                -250,
-                275,
-                -250,
-                410,
-                -250,
-                420
+                210,
+                -370,
+                210,
+                -460,
+                210,
+                -470,
+                210
             ]
         },
         {
             "from": 25,
             "to": 27,
             "points": [
-                -220,
+                -340,
                 100,
-                -210,
+                -350,
                 100,
-                -185,
+                -395,
                 100,
-                -185,
-                90,
-                -160,
-                90,
-                -150,
-                90
+                -395,
+                110,
+                -440,
+                110,
+                -450,
+                110
             ]
         },
         {
             "from": 25,
             "to": 30,
             "points": [
+                -280,
+                70,
+                -280,
+                60,
+                -280,
+                60,
+                -460,
+                60,
+                -460,
+                -10,
+                -460,
+                -20
+            ]
+        },
+        {
+            "from": 1,
+            "to": 10001,
+            "color": "green",
+            "points": [
+                120,
+                15,
+                146,
+                15,
+                146,
+                30,
+                138,
+                30,
+                130,
+                30,
+                120,
+                30
+            ]
+        },
+        {
+            "from": 1,
+            "to": 10002,
+            "color": "red",
+            "points": [
+                120,
+                30,
+                130,
+                30,
+                130,
+                30,
+                130,
+                30,
+                130,
+                30,
+                140,
+                30
+            ]
+        },
+        {
+            "from": 1,
+            "to": 10004,
+            "color": "green",
+            "points": [
+                120,
+                15,
+                130,
+                15,
+                132,
+                15,
+                132,
+                -12,
+                788,
+                -12,
+                788,
+                -68,
+                1140,
+                -68,
+                1140,
+                10,
+                1190,
+                10,
+                1200,
+                10
+            ]
+        },
+        {
+            "from": 2,
+            "to": 10006,
+            "color": "green",
+            "points": [
+                260,
+                30,
+                270,
+                30,
+                270,
+                30,
+                270,
+                -12,
+                548,
+                -12,
+                548,
+                30,
+                550,
+                30,
+                560,
+                30
+            ]
+        },
+        {
+            "from": 3,
+            "to": 10007,
+            "color": "red",
+            "points": [
+                400,
+                30,
+                410,
+                30,
+                412,
+                30,
+                412,
+                -12,
+                692,
+                -12,
+                692,
+                30,
+                690,
+                30,
+                700,
+                30
+            ]
+        },
+        {
+            "from": 3,
+            "to": 10008,
+            "color": "green",
+            "points": [
+                400,
+                20,
+                410,
+                20,
+                412,
+                20,
+                412,
+                -130,
+                1110,
+                -130,
+                1120,
+                -130
+            ]
+        },
+        {
+            "from": 5,
+            "to": 10009,
+            "color": "red",
+            "points": [
+                560,
+                30,
+                550,
+                30,
+                548,
+                30,
+                548,
+                -12,
+                268,
+                -12,
+                268,
+                110,
+                270,
+                110,
+                260,
+                110
+            ]
+        },
+        {
+            "from": 6,
+            "to": 10010,
+            "color": "green",
+            "points": [
+                700,
+                30,
+                690,
+                30,
+                690,
+                30,
+                690,
+                148,
+                412,
+                148,
+                412,
+                110,
+                410,
+                110,
+                400,
+                110
+            ]
+        },
+        {
+            "from": 15,
+            "to": 10011,
+            "color": "red",
+            "points": [
+                -200,
+                0,
+                -190,
+                0,
+                -188,
+                0,
+                -188,
+                0,
+                -20,
+                0,
+                -20,
+                68,
+                412,
+                68,
+                412,
+                110,
+                410,
+                110,
+                420,
+                110
+            ]
+        },
+        {
+            "from": 16,
+            "to": 10012,
+            "color": "green",
+            "points": [
+                200,
+                160,
+                200,
+                150,
+                200,
+                148,
+                -140,
+                148,
+                -140,
+                -80,
+                -140,
+                -90
+            ]
+        },
+        {
+            "from": 16,
+            "to": 10013,
+            "color": "red",
+            "points": [
+                260,
+                200,
+                278,
+                200,
+                278,
+                200,
+                278,
+                148,
+                692,
+                148,
+                692,
+                110,
+                690,
+                110,
+                700,
+                110
+            ]
+        },
+        {
+            "from": 25,
+            "to": 10014,
+            "color": "green",
+            "points": [
                 -260,
                 130,
                 -260,
                 140,
                 -260,
-                225,
+                200,
+                -260,
+                200,
+                -260,
+                260,
+                -260,
+                270
+            ]
+        },
+        {
+            "from": 25,
+            "to": 10015,
+            "color": "green",
+            "points": [
+                -250,
+                130,
+                -250,
+                140,
+                -250,
+                200,
                 -130,
-                225,
+                200,
                 -130,
+                260,
+                -130,
+                270
+            ]
+        },
+        {
+            "from": 26,
+            "to": 10016,
+            "color": "red",
+            "points": [
+                -530,
+                250,
+                -530,
+                260,
+                -530,
+                290,
+                -530,
+                290,
+                -530,
+                320,
+                -530,
+                330
+            ]
+        },
+        {
+            "from": 11,
+            "to": 10017,
+            "color": "green",
+            "points": [
+                -240,
+                560,
+                -250,
+                560,
+                -315,
+                560,
+                -315,
+                540,
+                -380,
+                540,
+                -390,
+                540
+            ]
+        },
+        {
+            "from": 12,
+            "to": 10018,
+            "color": "green",
+            "points": [
+                1010,
+                590,
+                1010,
+                600,
+                1010,
+                610,
+                1010,
+                610,
+                1010,
+                620,
+                1010,
+                630
+            ]
+        },
+        {
+            "from": 32,
+            "to": 10019,
+            "color": "green",
+            "points": [
+                620,
+                560,
+                620,
+                550,
+                620,
+                548,
+                828,
+                548,
+                828,
+                228,
+                760,
+                228,
+                760,
+                230,
+                760,
+                220
+            ]
+        },
+        {
+            "from": 34,
+            "to": 10020,
+            "color": "red",
+            "points": [
+                610,
+                500,
+                600,
+                500,
+                585,
+                500,
+                585,
+                510,
+                570,
+                510,
+                560,
+                510
+            ]
+        },
+        {
+            "from": 34,
+            "to": 10022,
+            "color": "red",
+            "points": [
+                670,
+                470,
+                670,
+                460,
+                670,
+                440,
+                625,
+                440,
+                580,
+                440,
+                570,
+                440
+            ]
+        },
+        {
+            "from": 36,
+            "to": 10024,
+            "color": "green",
+            "points": [
+                120,
+                430,
+                130,
+                430,
+                132,
+                430,
+                132,
+                308,
+                548,
+                308,
+                548,
+                270,
+                550,
+                270,
+                560,
+                270
+            ]
+        },
+        {
+            "from": 38,
+            "to": 10025,
+            "color": "red",
+            "points": [
+                400,
+                430,
+                410,
+                430,
+                412,
+                430,
+                412,
+                308,
+                620,
+                308,
+                620,
+                270,
+                690,
+                270,
+                700,
+                270
+            ]
+        },
+        {
+            "from": 39,
+            "to": 10026,
+            "color": "red",
+            "points": [
+                -270,
+                430,
+                -260,
+                430,
+                -135,
+                430,
+                -135,
+                350,
+                -10,
+                350,
+                0,
+                350
+            ]
+        },
+        {
+            "from": 41,
+            "to": 10027,
+            "color": "green",
+            "points": [
+                700,
+                440,
+                682,
+                440,
+                682,
+                440,
+                682,
+                388,
+                268,
+                388,
+                268,
+                350,
+                270,
+                350,
+                260,
+                350
+            ]
+        },
+        {
+            "from": 41,
+            "to": 10028,
+            "color": "red",
+            "points": [
+                700,
+                420,
+                690,
+                420,
+                690,
+                420,
+                690,
+                388,
+                412,
+                388,
+                412,
+                350,
+                410,
+                350,
+                400,
+                350
+            ]
+        },
+        {
+            "from": 42,
+            "to": 10029,
+            "color": "green",
+            "points": [
+                840,
+                430,
+                830,
+                430,
+                828,
+                430,
+                828,
+                388,
+                692,
+                388,
+                692,
+                350,
+                550,
+                350,
+                540,
+                350
+            ]
+        },
+        {
+            "from": 43,
+            "to": 10030,
+            "color": "green",
+            "points": [
+                1280,
+                530,
+                1280,
+                540,
+                1280,
+                555,
+                1280,
+                555,
+                1280,
+                570,
+                1280,
+                580
+            ]
+        },
+        {
+            "from": 46,
+            "to": 10031,
+            "color": "red",
+            "points": [
+                1230,
+                280,
+                1220,
+                280,
+                1140,
+                280,
+                1140,
+                265,
+                1140,
+                250,
+                1140,
+                240
+            ]
+        },
+        {
+            "from": 46,
+            "to": 10032,
+            "color": "green",
+            "points": [
+                1290,
+                260,
+                1290,
+                250,
+                1290,
+                220,
+                1290,
+                220,
+                1290,
+                190,
+                1290,
+                180
+            ]
+        },
+        {
+            "from": 10001,
+            "to": 10002,
+            "color": "red",
+            "points": [
+                120,
+                40,
+                138,
+                40,
+                138,
+                40,
+                130,
+                40,
+                130,
+                40,
+                140,
+                40
+            ]
+        },
+        {
+            "from": 10004,
+            "to": 10005,
+            "color": "red",
+            "points": [
+                1200,
+                20,
+                1190,
+                20,
+                1188,
+                20,
+                1188,
+                68,
+                548,
+                68,
+                548,
+                30,
+                550,
+                30,
+                540,
+                30
+            ]
+        },
+        {
+            "from": 10007,
+            "to": 10008,
+            "color": "red",
+            "points": [
+                820,
+                30,
+                830,
+                30,
+                830,
+                30,
+                830,
+                -120,
+                1110,
+                -120,
+                1120,
+                -120
+            ]
+        },
+        {
+            "from": 10020,
+            "to": 10021,
+            "color": "red",
+            "points": [
+                500,
+                480,
+                500,
+                470,
+                500,
+                468,
+                412,
+                468,
+                412,
+                308,
+                200,
+                308,
+                200,
                 310,
-                -130,
-                320
+                200,
+                300
+            ]
+        },
+        {
+            "from": 10018,
+            "to": 10023,
+            "color": "red",
+            "points": [
+                950,
+                660,
+                940,
+                660,
+                555,
+                660,
+                555,
+                640,
+                170,
+                640,
+                160,
+                640
+            ]
+        },
+        {
+            "from": 10031,
+            "to": 10032,
+            "color": "red",
+            "points": [
+                1200,
+                210,
+                1210,
+                210,
+                1270,
+                210,
+                1270,
+                200,
+                1270,
+                190,
+                1270,
+                180
             ]
         }
     ]
