@@ -370,6 +370,10 @@ def fix_locations(json_object,fpath_json):
         ## Take its location from node_current.
         if "loc" in node_current:
             node["loc"] = node_current["loc"]
+        
+        ## Take its size from node_current.
+        if "size" in node_current:
+            node["size"] = node_current["size"]
     
     ## Now do the same for links
     for link in json_object['linkDataArray']:
@@ -467,6 +471,14 @@ def output_html(json_object,fpath_html):
 ## On the command line, python convert.py -h will display this information.
 parser = argparse.ArgumentParser(description="Convert Hypernomicon XML to GoJS JSON.")
 
+## Add the Debate ID argument
+# parser.add_argument('--debate',
+#                     metavar='DEBATE_ID',
+#                     type=int,
+#                     nargs=1, # one
+#                     default=-1
+#                     )
+
 ## Add the XML Positions file argument
 parser.add_argument('--positions',
                     metavar='XML_POSITIONS_FILEPATH',
@@ -509,5 +521,10 @@ if __name__ == '__main__':
     ## Convert to dict
     args_dict = vars(args)
     
-    ## Call main method with these arguments
+    # if args_dict["debate"]==-1:
+    #     print("Please supply a Debate ID")
+    # else:
+    #     ## Call main method with these arguments
+    #     run(args_dict)
+    
     run(args_dict)
