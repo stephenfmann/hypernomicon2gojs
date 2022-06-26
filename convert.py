@@ -44,11 +44,14 @@ def run(args):
     ## Create JSON
     json_object = create_json(nodes,links)
     
+    ## Determine the true JSON filename.
+    json_fpath = get_json_filepath(args)
+    
     ## Fix the locations of known nodes and links
-    json_object = fix_locations(json_object,args['json'])
+    json_object = fix_locations(json_object,json_fpath)
     
     ## Dump JSON
-    output_json(json_object,args['json'])
+    output_json(json_object,json_fpath)
     
     ## Output HTML
     output_html(json_object,args['html'])
@@ -528,18 +531,38 @@ def create_json(nodes,links):
     
     return json_object
 
-def output_json(json_object,fpath_out):
+def get_json_filepath(args):
+    """
+    Determine the JSON filepath.
+    Basically add "_<debate ID>" to the supplied filepath.
+
+    Parameters
+    ----------
+    args : dict
+        User supplied parameters.
+
+    Returns
+    -------
+    json_fpath : string
+        The filepath that will be used for the JSON.
+
+    """
     
-    with open(fpath_out,'w',encoding="utf8") as f:
-        json.dump(
-            json_object,
-            f,
-            indent=4 # pretty print
-            )
+    fpath_raw = args["json"]
+    debate_id_str = str(args["debate"])
+    
+    ## If it already ends with .json, chop that off before adding the debate ID
+    if len(fpath_raw) > 5 and fpath_raw[-5:] == '.json':
+        fpath_raw = fpath_raw[:-5]
+    
+    json_fpath = f'{fpath_raw}_{debate_id_str}.json'
+    
+    return json_fpath
 
 def fix_locations(json_object,fpath_json):
     """
-    Nodes and links
+    Nodes and links.
+    If the file doesn't yet exist, do nothing.
 
     Parameters
     ----------
@@ -556,18 +579,13 @@ def fix_locations(json_object,fpath_json):
     """
     
     ## Get the current HTML file
-    with open(fpath_json,'r',encoding="utf8") as f:
-        # html = bs(f.read(), features="lxml")
-        json_object_current = json.loads(f.read()) 
-    
-    ## Get the textarea containing the current JSON
-    # def textarea_model(tag):
-    #     return tag.name=='textarea' and tag['id']=='mySavedModel'
-    
-    # textarea = html.find(textarea_model)
-    
-    ## Get the current JSON object from the HTML file
-    # json_object_current = json.loads(textarea.text) 
+    try:
+        with open(fpath_json,'r',encoding="utf8") as f:
+            json_object_current = json.loads(f.read()) 
+    except FileNotFoundError:
+        ## The file doesn't exist yet, so no need to specify existing properties.
+        ## The file will be created with default properties.
+        return json_object
     
     ## Now for each of the nodes we want to add, check whether it already exists in <json_object_current>.
     ## If so, keep its location.
@@ -645,6 +663,30 @@ def find_link(json_object_current,link)->None:
     for link_current_candidate in json_object_current['linkDataArray']: # maybe there's a quicker way to do this
         if link_current_candidate["from"] == link["from"] and link_current_candidate["to"] == link["to"]: 
             return link_current_candidate
+
+def output_json(json_object,fpath_out):
+    """
+    Dump JSON to specified file.
+
+    Parameters
+    ----------
+    json_object : TYPE
+        DESCRIPTION.
+    fpath_out : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
+    """
+    
+    with open(fpath_out,'w',encoding="utf8") as f:
+        json.dump(
+            json_object,
+            f,
+            indent=4 # pretty print
+            )
     
 def output_html(json_object,fpath_html):
     """
