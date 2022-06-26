@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<records version="1.6" xmlns="org.hypernomicon">
+
+<record type="debate" id="2">
+  <creation_date>2021-06-22T17:02:54.7548093+02:00</creation_date>
+  <modified_date>2021-06-22T17:03:04.3057984+02:00</modified_date>
+  <view_date>2021-06-29T12:50:42.1794424+02:00</view_date>
+  <name>Linguistics</name>
+  <larger_debate id="1">All debates</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+</record>
+
+<record type="debate" id="3">
+  <creation_date>2021-06-22T17:03:25.0667848+02:00</creation_date>
+  <modified_date>2021-06-22T17:03:33.1697755+02:00</modified_date>
+  <view_date>2022-03-02T12:03:40.2892615+01:00</view_date>
+  <name>Linguistic nativism</name>
+  <larger_debate id="2">Linguistics</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="2">record</display_item>
+</record>
+
+<record type="debate" id="4">
+  <creation_date>2021-06-22T17:03:44.2025708+02:00</creation_date>
+  <modified_date>2021-06-22T17:03:48.6977634+02:00</modified_date>
+  <view_date>2021-06-29T12:50:41.9616677+02:00</view_date>
+  <name>Philosophy</name>
+  <larger_debate id="1">All debates</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+</record>
+
+<record type="debate" id="5" search_key="free will">
+  <creation_date>2021-06-28T11:40:00.4258908+02:00</creation_date>
+  <modified_date>2021-06-28T11:57:33.5373829+02:00</modified_date>
+  <view_date>2021-06-29T12:50:42.8062158+02:00</view_date>
+  <name>Free Will</name>
+  <larger_debate id="6">Philosophy of Mind</larger_debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt; 
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt; 
+ &lt;/head&gt; 
+ &lt;body contenteditable="true"&gt; 
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;[Jason Winning default record.]&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Determinism does not seem to be compatible with free will. But our naturalistic worldview seems to presuppose determinism. And it seems undeniable that humans have free will. How do we resolve this paradox?&lt;/font&gt;&lt;/p&gt; 
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="4">record</display_item>
+</record>
+
+<record type="debate" id="6">
+  <creation_date>2021-06-28T11:44:30.7049652+02:00</creation_date>
+  <modified_date>2021-06-28T11:44:35.9679579+02:00</modified_date>
+  <view_date>2021-06-29T12:50:40.1996621+02:00</view_date>
+  <name>Philosophy of Mind</name>
+  <larger_debate id="4">Philosophy</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="4">record</display_item>
+</record>
+
+<record type="debate" id="7">
+  <creation_date>2021-06-29T11:42:28.3510642+02:00</creation_date>
+  <modified_date>2022-05-27T14:50:05.7981088+02:00</modified_date>
+  <view_date>2022-05-27T14:50:05.802104+02:00</view_date>
+  <name>Phil. Biology</name>
+  <larger_debate id="4">Philosophy</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="4">record</display_item>
+</record>
+
+<record type="debate" id="8">
+  <creation_date>2021-06-29T11:42:41.0070742+02:00</creation_date>
+  <modified_date>2022-06-01T10:55:14.9222477+02:00</modified_date>
+  <view_date>2022-06-01T10:55:54.4490871+02:00</view_date>
+  <name>Active Inference</name>
+  <larger_debate id="7">Phil. Biology</larger_debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Bhat et al 2021:3: "&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;Active inference is an application of the FEP to sentient behaviour."&lt;/span&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="7">record</display_item>
+</record>
+
+<record type="debate" id="9">
+  <creation_date>2021-06-29T12:49:51.6661856+02:00</creation_date>
+  <modified_date>2022-05-25T14:40:15.3810208+02:00</modified_date>
+  <view_date>2022-06-22T18:01:56.8612174+02:00</view_date>
+  <name>The free energy principle</name>
+  <larger_debate id="8">Active Inference</larger_debate>
+  <hub id="4"></hub>
+</record>
+
+<record type="debate" id="10">
+  <creation_date>2021-06-29T12:50:15.658204+02:00</creation_date>
+  <modified_date>2021-06-29T12:50:23.9136467+02:00</modified_date>
+  <view_date>2021-06-29T12:50:42.5986735+02:00</view_date>
+  <name>Is FEP falsifiable?</name>
+  <larger_debate id="9">The free energy principle</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="9">record</display_item>
+</record>
+
+<record type="debate" id="11">
+  <creation_date>2021-07-06T17:44:28.4149879+02:00</creation_date>
+  <modified_date>2021-07-06T17:44:34.7424637+02:00</modified_date>
+  <view_date>2021-07-06T17:44:34.7474526+02:00</view_date>
+  <name>Conceptual analysis</name>
+  <larger_debate id="4">Philosophy</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="4">record</display_item>
+</record>
+
+<record type="debate" id="12">
+  <creation_date>2021-07-15T17:03:06.5254791+02:00</creation_date>
+  <modified_date>2021-07-19T14:45:42.7474509+02:00</modified_date>
+  <view_date>2022-06-22T17:58:18.4354843+02:00</view_date>
+  <name>Markov blankets</name>
+  <larger_debate id="8">Active Inference</larger_debate>
+  <hub id="2"></hub>
+</record>
+
+<record type="debate" id="13" search_key="psychology">
+  <creation_date>2021-08-16T11:52:21.4407999+02:00</creation_date>
+  <modified_date>2021-08-16T11:52:28.6236949+02:00</modified_date>
+  <view_date>2021-09-21T11:14:19.391764+02:00</view_date>
+  <name>Psychology</name>
+  <larger_debate id="1">All debates</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+</record>
+
+<record type="debate" id="14">
+  <creation_date>2021-08-16T11:52:32.43254+02:00</creation_date>
+  <modified_date>2021-08-16T11:52:37.5917012+02:00</modified_date>
+  <view_date>2021-08-16T11:52:37.5957596+02:00</view_date>
+  <name>Reasoning</name>
+  <larger_debate id="13">Psychology</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="13">record</display_item>
+</record>
+
+<record type="debate" id="15">
+  <creation_date>2021-09-20T16:19:46.7530883+02:00</creation_date>
+  <modified_date>2021-09-20T16:19:50.4162184+02:00</modified_date>
+  <view_date>2021-09-20T16:19:50.4411514+02:00</view_date>
+  <name>Economics</name>
+  <larger_debate id="1">All debates</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+</record>
+
+<record type="debate" id="16" search_key="Evolutionary linguistics; evolution of language; language evolution">
+  <creation_date>2021-09-21T13:27:49.2381195+02:00</creation_date>
+  <modified_date>2021-09-21T13:28:05.3329808+02:00</modified_date>
+  <view_date>2021-11-03T11:56:23.585424+01:00</view_date>
+  <name>Evolutionary linguistics</name>
+  <larger_debate id="2">Linguistics</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="2">record</display_item>
+</record>
+
+<record type="debate" id="17">
+  <creation_date>2021-11-03T11:56:34.7801171+01:00</creation_date>
+  <modified_date>2021-11-03T11:56:41.3792772+01:00</modified_date>
+  <view_date>2021-11-03T11:56:41.3822713+01:00</view_date>
+  <name>Philosophy of Language</name>
+  <larger_debate id="4">Philosophy</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="4">record</display_item>
+</record>
+
+<record type="debate" id="18">
+  <creation_date>2021-11-03T11:56:48.2040306+01:00</creation_date>
+  <modified_date>2021-11-03T11:57:41.2159046+01:00</modified_date>
+  <view_date>2021-11-03T11:57:04.8884094+01:00</view_date>
+  <name>Intentionality</name>
+  <larger_debate id="4">Philosophy</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="17">record</display_item>
+</record>
+
+<record type="debate" id="19" search_key="Minimal conditions for intentionality">
+  <creation_date>2021-11-03T11:57:57.6920111+01:00</creation_date>
+  <modified_date>2021-11-03T11:58:08.466636+01:00</modified_date>
+  <view_date>2021-11-16T11:02:34.1554244+01:00</view_date>
+  <name>Minimal conditions for intentionality</name>
+  <larger_debate id="18">Intentionality</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="18">record</display_item>
+</record>
+
+<record type="debate" id="20" search_key="deb:Realism about belief">
+  <creation_date>2022-03-02T12:04:02.9233955+01:00</creation_date>
+  <modified_date>2022-03-02T14:59:21.7972439+01:00</modified_date>
+  <view_date>2022-03-02T14:59:10.9521245+01:00</view_date>
+  <name>Realism about belief</name>
+  <larger_debate id="18">Intentionality</larger_debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;Usually assumed to involve "&lt;/font&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;differences of opinion&amp;nbsp;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;about whether beliefs and other mental states are, shall we say, &lt;span style="font-style: italic;"&gt;as&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Arial; font-size: small;"&gt;&lt;span style="font-style: italic;"&gt;real as &lt;/span&gt;electrons or centers of gravity.&lt;/span&gt;&lt;font face="Arial" size="2"&gt;" (Dennett 1991:30)&lt;/font&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="18">record</display_item>
+</record>
+
+<record type="debate" id="21">
+  <creation_date>2022-03-02T14:13:20.1895667+01:00</creation_date>
+  <modified_date>2022-03-02T14:13:23.9167665+01:00</modified_date>
+  <view_date>2022-03-02T14:13:23.9197254+01:00</view_date>
+  <name>Ontology</name>
+  <larger_debate id="4">Philosophy</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="4">record</display_item>
+</record>
+
+<record type="debate" id="22">
+  <creation_date>2022-03-02T14:13:34.716431+01:00</creation_date>
+  <modified_date>2022-03-02T14:24:07.298204+01:00</modified_date>
+  <view_date>2022-03-02T14:13:54.703643+01:00</view_date>
+  <name>Centres of gravity</name>
+  <larger_debate id="23">Abstract objects</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="21">record</display_item>
+</record>
+
+<record type="debate" id="23">
+  <creation_date>2022-03-02T14:23:54.6613364+01:00</creation_date>
+  <modified_date>2022-03-02T14:24:00.3639241+01:00</modified_date>
+  <view_date>2022-03-02T14:24:00.3659211+01:00</view_date>
+  <name>Abstract objects</name>
+  <larger_debate id="21">Ontology</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="21">record</display_item>
+</record>
+
+<record type="debate" id="24">
+  <creation_date>2022-04-01T12:00:57.9967524+02:00</creation_date>
+  <modified_date>2022-04-01T12:01:05.1622201+02:00</modified_date>
+  <view_date>2022-04-01T12:01:05.1652154+02:00</view_date>
+  <name>Philosophy of Science</name>
+  <larger_debate id="4">Philosophy</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="4">record</display_item>
+</record>
+
+<record type="debate" id="25" search_key="causal explanation; causal-explanat">
+  <creation_date>2022-04-01T12:01:20.9465419+02:00</creation_date>
+  <modified_date>2022-04-01T12:04:25.6079157+02:00</modified_date>
+  <view_date>2022-04-08T11:46:50.131116+02:00</view_date>
+  <name>Causal Explanation</name>
+  <larger_debate id="24">Philosophy of Science</larger_debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;The problem of defining what is unique or special about explanations that appeal to causes, as opposed to other kinds of scientific explanation.&lt;/font&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="24">record</display_item>
+</record>
+
+<record type="debate" id="26">
+  <creation_date>2022-05-06T20:39:48.1445134+02:00</creation_date>
+  <modified_date>2022-05-06T20:39:58.2811017+02:00</modified_date>
+  <view_date>2022-05-06T20:39:58.285091+02:00</view_date>
+  <name>Philosophy of Mathematics</name>
+  <larger_debate id="4">Philosophy</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="4">record</display_item>
+</record>
+
+<record type="debate" id="27">
+  <creation_date>2022-05-25T11:43:50.4834255+02:00</creation_date>
+  <modified_date>2022-05-25T11:43:56.0498961+02:00</modified_date>
+  <view_date>2022-05-25T11:43:56.0571646+02:00</view_date>
+  <name>Extended active inference</name>
+  <larger_debate id="8">Active Inference</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="8">record</display_item>
+</record>
+
+<record type="debate" id="28">
+  <creation_date>2022-05-27T14:48:49.4344838+02:00</creation_date>
+  <modified_date>2022-05-27T14:49:58.3875455+02:00</modified_date>
+  <view_date>2022-05-27T14:48:56.1084271+02:00</view_date>
+  <name>Demarcating cognition</name>
+  <larger_debate id="7">Phil. Biology</larger_debate>
+  <larger_debate id="29">Phil. CogSci</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="8">record</display_item>
+</record>
+
+<record type="debate" id="29">
+  <creation_date>2022-05-27T14:49:40.891619+02:00</creation_date>
+  <modified_date>2022-05-27T14:50:19.815782+02:00</modified_date>
+  <view_date>2022-05-27T14:50:19.8197749+02:00</view_date>
+  <name>Phil. CogSci</name>
+  <larger_debate id="4">Philosophy</larger_debate>
+  <description>&lt;html dir="ltr"&gt;
+ &lt;head&gt;
+  &lt;style&gt;p { margin-top: 0em; margin-bottom: 0em; } body { margin-right: 20px; font-family: arial; font-size: 10pt; } &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body contenteditable="true"&gt;
+  &lt;p&gt;&lt;font face="Arial" size="2"&gt;The philosophy of cognitive science.&lt;/font&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</description>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="4">record</display_item>
+</record>
+
+<record type="debate" id="30">
+  <creation_date>2022-06-10T11:06:23.7405794+02:00</creation_date>
+  <modified_date>2022-06-10T11:06:28.3527187+02:00</modified_date>
+  <view_date>2022-06-10T11:06:28.3590332+02:00</view_date>
+  <name>Neural representation</name>
+  <larger_debate id="29">Phil. CogSci</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="29">record</display_item>
+</record>
+
+<record type="debate" id="31">
+  <creation_date>2022-06-10T11:11:57.9642645+02:00</creation_date>
+  <modified_date>2022-06-10T11:12:22.0839865+02:00</modified_date>
+  <view_date>2022-06-10T11:12:22.0879869+02:00</view_date>
+  <name>Origin of Language</name>
+  <larger_debate id="16">Evolutionary linguistics</larger_debate>
+  <larger_debate id="7">Phil. Biology</larger_debate>
+  <larger_debate id="17">Philosophy of Language</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="16">record</display_item>
+</record>
+
+<record type="debate" id="32" search_key="human uniqueness; evolution of human uniqueness">
+  <creation_date>2022-06-16T11:11:27.3472568+02:00</creation_date>
+  <modified_date>2022-06-16T11:11:51.5092635+02:00</modified_date>
+  <view_date>2022-06-16T11:11:51.5541458+02:00</view_date>
+  <name>Evolution of human uniqueness</name>
+  <larger_debate id="1">All debates</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <key_work type="work" id="113">Sterelny 2003</key_work>
+</record>
+
+<record type="debate" id="33">
+  <creation_date>2022-06-16T11:16:52.795288+02:00</creation_date>
+  <modified_date>2022-06-16T11:16:57.0902983+02:00</modified_date>
+  <view_date>2022-06-16T11:16:57.0942873+02:00</view_date>
+  <name>Folk psychology</name>
+  <larger_debate id="18">Intentionality</larger_debate>
+  <display_item>key_works</display_item>
+  <display_item>description</display_item>
+  <display_item type="debate" id="18">record</display_item>
+</record>
+
+
+
+
+
+</records>

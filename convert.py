@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 
+import logging
 import json
 import argparse
+import copy
 from bs4 import BeautifulSoup as bs
 
 ## Configure display format
@@ -29,8 +31,15 @@ def run(args):
 
     """
     
+    ## Create log
+    logging.Logger("Hypernomicon2GoJS")
+    
     ## Parse the input
-    nodes,links = parse_xml(args)
+    try:
+        nodes,links = parse_xml(args)
+    except ValueError:
+        logging.error("An error occurred while attempting to parse XML files.")
+        return
     
     ## Create JSON
     json_object = create_json(nodes,links)
@@ -65,41 +74,172 @@ def parse_xml(args):
 
     """
     
-    ## 1. Positions
+    ## DEBATES
+    with open(args['debates'],'r',encoding='utf8') as f:
+        xml_debates = bs(f.read(), features="xml")
+    
+    ## Sanity check
+    if args['debate'] != 1 and not xml_debates.find("record",id=str(args['debate'])):
+        logging.error("No debate found! Program will quit.")
+        raise ValueError
+    
+    ## Recursively get all subdebate IDs under this debate
+    debate_ids = get_all_descendant_debates([args['debate']],xml_debates)
+    
+    ## POSITIONS
     ## Load Positions XML
     with open(args['positions'],'r',encoding="utf8") as f:
         xml_positions = bs(f.read(), features="xml")
     
+    ## Recursively get all position IDs under the listed debates.
+    position_ids = get_all_descendant_positions(debate_ids,xml_positions)
+    
     ## Extract the nodes 
-    nodes_positions = get_nodes_positions(xml_positions)
+    nodes_positions = get_nodes_positions(position_ids,xml_positions)
     
     ## Extract the links
-    links_positions = get_links_positions(xml_positions)
+    links_positions = get_links_positions(position_ids,xml_positions)
     
-    ## 2. Arguments
+    ## ARGUMENTS
     ## Load Arguments XML
     with open(args['arguments'],'r',encoding="utf8") as f:
         xml_arguments = bs(f.read(), features="xml")
+    
+    ## Recursively get all argument IDs under the listed debates and positions.
+    argument_ids = get_all_descendant_arguments(position_ids,xml_arguments)
         
     ## Extract the nodes 
-    nodes_arguments = get_nodes_arguments(xml_arguments)
+    nodes_arguments = get_nodes_arguments(argument_ids,xml_arguments)
     
     ## Extract the links
-    links_arguments = get_links_arguments(xml_arguments)
+    links_arguments = get_links_arguments(position_ids,argument_ids,xml_arguments)
     
-    ## 3. Combine
+    ## COMBINE
     nodes = nodes_positions + nodes_arguments
     links = links_positions + links_arguments
     
     return nodes,links
 
-def get_nodes_positions(xml):
+def get_all_descendant_debates(debate_ids,xml_debates):
+    """
+    Get all descendants of the listed debates.
+
+    Parameters
+    ----------
+    debate_ids : list
+        Debate IDs to find descendants of.
+    xml_debates : BeautifulSoup object
+        The debates xml file parsed by BeautifulSoup.
+    
+    Returns
+    -------
+    debate_ids : list
+        The original IDs together with all their descendants.
+
+    """
+    
+    ## Recursively...
+    while True:
+        
+        ## ...find all debates that are children of the current list...
+        def larger_debate_requested(id):
+            if id is not None:
+                return int(id) in debate_ids # filter functions must return True or False
+            
+        ## (From the documentation: "Any argument that’s not recognized 
+        ##   will be turned into a filter on one of a tag’s attributes.")
+        debates_to_add = xml_debates.find_all('larger_debate',id=larger_debate_requested)
+        
+        ## ...add those children to the current list...
+        finished = True
+        for larger_debate_node in debates_to_add:
+            new_debate = int(larger_debate_node.parent["id"])
+            
+            ## (Is this a debate we have not yet collected?)
+            if new_debate not in debate_ids:
+                finished = False
+                debate_ids.append(new_debate)
+        
+        ## ...but quit if no new children were added this time.
+        if finished:break
+    
+    ## Sort the list before returning.
+    debate_ids.sort()
+    
+    return debate_ids
+
+def get_all_descendant_positions(debate_ids,xml_positions):
+    """
+    Some positions have a tag called <debate> and some have <larger_position>.
+    Need to find all of these.
+
+    Parameters
+    ----------
+    debate_ids : list
+        Debate IDs to find child positions of.
+    xml_positions : BeautifulSoup object
+        E.g. Positions.xml, parsed by BS.
+
+    Returns
+    -------
+    position_ids : list
+        Position IDs to plot.
+
+    """
+    
+    ## Start with the first batch of Positions.
+    def larger_debate_requested(id):
+        if id is not None:
+            return int(id) in debate_ids # filter functions must return True or False
+    
+    positions_to_add = xml_positions.find_all('debate',id=larger_debate_requested)
+    
+    ## Now <positions_to_add> are all the nodes.
+    ## Get the IDs.
+    position_ids = []
+    for position in positions_to_add:
+        ## Avoid duplicates
+        new_position = int(position.parent['id'])
+        if new_position not in position_ids: position_ids.append(new_position)
+    
+    ## Recursively...
+    while True:
+        
+        ## ...find all positions that are children of the current list...
+        def larger_position_requested(id):
+            if id is not None:
+                return int(id) in position_ids # filter functions must return True or False
+            
+        ## (From the documentation: "Any argument that’s not recognized 
+        ##   will be turned into a filter on one of a tag’s attributes.")
+        positions_to_add = xml_positions.find_all('larger_position',id=larger_position_requested)
+        
+        ## ...add those children to the current list...
+        finished = True
+        for larger_position_node in positions_to_add:
+            new_position = int(larger_position_node.parent["id"])
+            
+            ## (Is this a debate we have not yet collected?)
+            if new_position not in position_ids:
+                finished = False
+                position_ids.append(new_position)
+        
+        ## ...but quit if no new children were added this time.
+        if finished:break
+    
+    ## Sort the list before returning.
+    position_ids.sort()
+    
+    return position_ids
+
+def get_nodes_positions(position_ids,xml_positions):
     """
     From an XML string, return nodes as GoJS JSON list
 
     Parameters
     ----------
-    xml : BeautifulSoup parser object
+    position_ids : list of ints
+    xml_positions : BeautifulSoup parser object
 
     Returns
     -------
@@ -112,9 +252,8 @@ def get_nodes_positions(xml):
     ## Initialise JSON list of dicts
     nodes = []
     
-    ## Just positions for now
-    ## Later we will include arguments.
-    records_xml = xml.find_all('record',type="position")
+    ## Get list of position nodes
+    records_xml = xml_positions.find_all('record',type="position",id=position_ids)
     
     ## Loop and add
     for record in records_xml:
@@ -129,12 +268,13 @@ def get_nodes_positions(xml):
     
     return nodes
 
-def get_links_positions(xml):
+def get_links_positions(position_ids,xml):
     """
     From an XML string, return links as GoJS JSON list
 
     Parameters
     ----------
+    position_ids: list of ints
     xml : BeautifulSoup parser object
 
     Returns
@@ -145,9 +285,10 @@ def get_links_positions(xml):
 
     """
     
-    ## Define complex search function for BeautifulSoup
+    ## We have already figured out exactly which positions we need.
     def position_has_parent(tag):
-        return tag.name=='record' and tag.find('larger_position')  is not None
+        return tag.name=='record' and tag.find('larger_position')  is not None\
+                                  and int(tag.find('larger_position')['id']) in position_ids
     
     ## Get all records with parents
     records_xml = xml.find_all(position_has_parent)
@@ -168,7 +309,74 @@ def get_links_positions(xml):
     
     return links
 
-def get_nodes_arguments(xml):
+def get_all_descendant_arguments(position_ids,xml_arguments):
+    """
+    Filter by arguments relative to the selected positions
+
+    Parameters
+    ----------
+    position_ids : list of ints
+        DESCRIPTION.
+    xml_arguments : Beautiful soup object
+        DESCRIPTION.
+
+    Returns
+    -------
+    argument_ids : list of ints
+        DESCRIPTION.
+
+    """
+    
+    ## Some arguments don't have positions as parents, just other arguments.
+    ## Need to get all children of positions,
+    ##  as well as all children of arguments.
+    def argument_has_parent_position(tag):
+        return tag.name=='record' and tag.find('position')  is not None\
+                                  and int(tag.find('position')['id']) in position_ids
+    
+    arguments = xml_arguments.find_all(argument_has_parent_position)
+    
+    ## Extract the IDs from the nodes
+    argument_ids = []
+    for argument in arguments:
+        argument_ids.append(int(argument["id"]))
+        
+    ## Now recursively find all counterarguments,
+    ##  and add them if they aren't already in argument_ids = [].
+    ## Recursively...
+    while True:
+        
+        ## ...find arguments that point to known arguments...
+        def argument_has_parent_argument(tag):
+            return tag.name=='record' and tag.find('counterargument') is not None\
+                                      and int(tag.find('counterargument')["id"]) in argument_ids
+        
+        ## Get all records with parent arguments
+        arguments_with_parent_arguments_xml = xml_arguments.find_all(argument_has_parent_argument)
+        
+        ## Add it if it's not already in there
+        finished = True
+        for argument in arguments_with_parent_arguments_xml:
+            
+            ## Convert from string to int
+            argument_id_new = int(argument["id"])
+            
+            ## Is it not already in our list?
+            if argument_id_new not in argument_ids:
+                
+                ## Don't break, because this newly-added argument
+                ##  might have counterarguments that haven't yet been added
+                finished = False 
+                
+                ## Add the new argument
+                argument_ids.append(argument_id_new)
+        
+        if finished==True:break
+    
+    
+    return argument_ids
+
+def get_nodes_arguments(argument_ids,xml_arguments):
     """
     From an XML string, return nodes as GoJS JSON list.
     IDs for arguments are offset by 10,000 to prevent conflict with position IDs.
@@ -176,7 +384,8 @@ def get_nodes_arguments(xml):
 
     Parameters
     ----------
-    xml : BeautifulSoup parser object
+    argument_ids: list of ints
+    xml_arguments : BeautifulSoup parser object
 
     Returns
     -------
@@ -191,7 +400,7 @@ def get_nodes_arguments(xml):
     
     ## Just positions for now
     ## Later we will include arguments.
-    records_xml = xml.find_all('record',type="argument")
+    records_xml = xml_arguments.find_all('record',type="argument",id=argument_ids)
     
     ## Loop and add
     for record in records_xml:
@@ -207,14 +416,16 @@ def get_nodes_arguments(xml):
     
     return nodes
 
-def get_links_arguments(xml):
+def get_links_arguments(position_ids,argument_ids,xml_arguments):
     """
     From an XML string, return links as GoJS JSON list.
     Offset argument IDs by <ARGUMENT OFFSET>
 
     Parameters
     ----------
-    xml : BeautifulSoup parser object
+    positions_ids : list of ints
+    argument_ids  : list of ints
+    xml_arguments : BeautifulSoup parser object
 
     Returns
     -------
@@ -231,17 +442,19 @@ def get_links_arguments(xml):
     ## Define complex search function for BeautifulSoup
     ## Find arguments that point to positions
     def argument_has_parent_position(tag):
-        return tag.name=='record' and tag.find('position')  is not None
+        return tag.name=='record' and tag.find('position')  is not None\
+                                  and int(tag.find('position')['id']) in position_ids
     
     ## Get all records with parent positions
-    arguments_with_parent_positions_xml = xml.find_all(argument_has_parent_position)
+    arguments_with_parent_positions_xml = xml_arguments.find_all(argument_has_parent_position)
     
     ## Find arguments that point to other arguments
     def argument_has_parent_argument(tag):
-        return tag.name=='record' and tag.find('counterargument') is not None
+        return tag.name=='record' and tag.find('counterargument') is not None\
+                                  and int(tag.find('counterargument')["id"]) in argument_ids
     
     ## Get all records with parent arguments
-    arguments_with_parent_arguments_xml = xml.find_all(argument_has_parent_argument)
+    arguments_with_parent_arguments_xml = xml_arguments.find_all(argument_has_parent_argument)
     
     ## 2. Build the links list.
     ## Initialise
@@ -472,12 +685,20 @@ def output_html(json_object,fpath_html):
 parser = argparse.ArgumentParser(description="Convert Hypernomicon XML to GoJS JSON.")
 
 ## Add the Debate ID argument
-# parser.add_argument('--debate',
-#                     metavar='DEBATE_ID',
-#                     type=int,
-#                     nargs=1, # one
-#                     default=-1
-#                     )
+parser.add_argument('--debate',
+                    metavar='DEBATE_ID',
+                    type=int,
+                    nargs='?', # zero or one
+                    default=1 # defaults to all debates
+                    )
+
+## Add the XML Debates file argument
+parser.add_argument('--debates',
+                    metavar='XML_DEBATES_FILEPATH',
+                    type=str,
+                    nargs='?', # zero or one
+                    default='Debates.xml'
+                    )
 
 ## Add the XML Positions file argument
 parser.add_argument('--positions',
@@ -519,12 +740,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     ## Convert to dict
-    args_dict = vars(args)
+    args = vars(args)
     
-    # if args_dict["debate"]==-1:
-    #     print("Please supply a Debate ID")
-    # else:
-    #     ## Call main method with these arguments
-    #     run(args_dict)
-    
-    run(args_dict)
+    ## Run the main method
+    run(args)
