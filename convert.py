@@ -690,6 +690,9 @@ def output_json(json_object,fpath_out):
 
     """
     
+    ## Add filename to JSON object
+    json_object['filename'] = fpath_out
+    
     with open(fpath_out,'w',encoding="utf8") as f:
         json.dump(
             json_object,
