@@ -587,6 +587,9 @@ def fix_locations(json_object,fpath_json):
 
     """
     
+    ## First add the filename to the json object
+    json_object['filename'] = fpath_json
+    
     ## Get the current HTML file
     try:
         with open(fpath_json,'r',encoding="utf8") as f:
@@ -689,9 +692,6 @@ def output_json(json_object,fpath_out):
     None.
 
     """
-    
-    ## Add filename to JSON object
-    json_object['filename'] = fpath_out
     
     with open(fpath_out,'w',encoding="utf8") as f:
         json.dump(

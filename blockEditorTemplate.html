@@ -540,6 +540,21 @@
     // Show the diagram's model in JSON format
     function save() {
       var newJSON = myDiagram.model.toJson();
+      
+      // Preserve filename
+      originalJSON = JSON.parse(document.getElementById("mySavedModel").value);
+      if (Object.hasOwn(originalJSON,'filename')){
+        
+        // Convert new JSON to object
+        newJSONObj = JSON.parse(newJSON);
+        
+        // Insert filename
+        newJSONObj['filename'] = originalJSON['filename'];
+        
+        // Convert back to string
+        newJSON = JSON.stringify(newJSONObj,null,4);
+      }
+      
       document.getElementById("mySavedModel").value = newJSON
       document.getElementById("mySavedModel").innerHTML = newJSON
       myDiagram.isModified = false;
@@ -582,7 +597,14 @@ function saveTextAsFile() {
   var textToWrite = textArea.value;
   
   var textFileAsBlob = new Blob([ textToWrite ], { type: 'text/plain' });
-  var fileNameToSaveAs = "hyper2gojs.json"; //filename.extension
+  
+  // Use specified filename if available
+  var JSONObj = JSON.parse(textToWrite);
+  if (Object.hasOwn(JSONObj,'filename')){
+    var fileNameToSaveAs = JSONObj['filename'];
+  } else {
+    var fileNameToSaveAs = "hyper2gojs.json";
+  }
 
   var downloadLink = document.createElement("a");
   downloadLink.download = fileNameToSaveAs;
