@@ -1,10 +1,16 @@
 # -*- coding: utf-8 -*-
 
+import os
 import logging
 import json
 import argparse
 import copy
+import webbrowser
 from bs4 import BeautifulSoup as bs
+
+## HTML Template filepath
+## New HTML files will be copied from this one.
+HTML_TEMPLATE = 'blockEditorTemplate.html'
 
 ## Configure display format
 POSITION_FIGURE = "CreateRequest"
@@ -55,6 +61,9 @@ def run(args):
     
     ## Output HTML
     output_html(json_object,args['html'])
+    
+    ## Launch browser
+    if args['launch']:launch_html(args['html'])
     
 
 def parse_xml(args):
@@ -691,12 +700,15 @@ def output_json(json_object,fpath_out):
 def output_html(json_object,fpath_html):
     """
     Basically assumes a blockEditor type page
-     where the JSON can be dumped into a textarea
+     where the JSON can be dumped into a textarea.
+     
+    If <fpath_html> doesn't exist, it will be created
+     from blockEditorTemplate.html
 
     Parameters
     ----------
-    fpath_html : TYPE
-        DESCRIPTION.
+    fpath_html : str
+        Filepath to output the HTML file.
 
     Returns
     -------
@@ -704,8 +716,15 @@ def output_html(json_object,fpath_html):
 
     """
     
-    with open(fpath_html,'r',encoding="utf8") as f:
-        html = bs(f.read(), features="lxml")
+    ## Does the html file exist yet?
+    try:
+        with open(fpath_html,'r',encoding="utf8") as f:
+            html = bs(f.read(), features="lxml")
+    except FileNotFoundError:
+        ## The html file doesn't exist.
+        ## Create it from blockEditorTemplate.html
+        with open(HTML_TEMPLATE,'r',encoding="utf8") as f:
+            html = bs(f.read(), features="lxml")
     
     def textarea_model(tag):
         return tag.name=='textarea' and tag['id']=='mySavedModel'
@@ -718,6 +737,27 @@ def output_html(json_object,fpath_html):
     with open(fpath_html,'w',encoding="utf8") as f:
         f.write(str(html))
 
+def launch_html(fpath_html):
+    """
+    Launch the created/updated HTML file in browser
+
+    Parameters
+    ----------
+    fpath_html : str
+        The HTML file to launch.
+
+    Returns
+    -------
+    None.
+
+    """
+    
+    ## For some reason we have to build the filepath this way.
+    ## See https://stackoverflow.com/questions/5916270/pythons-webbrowser-launches-ie-instead-of-default-browser-on-windows-relative
+    url = os.path.realpath(fpath_html)
+    
+    ## Launch
+    webbrowser.open(url)
 
 '''
     Define command-line arguments to allow the user to run the script
@@ -773,6 +813,15 @@ parser.add_argument('--html',
                     nargs='?', # zero or one
                     default='blockEditor.html' # default to GoJS example file
                     )
+
+## Should we also launch the requested HTML file?
+parser.add_argument('--launch',
+                    metavar='LAUNCH_BROWSER',
+                    type=bool,
+                    nargs='?', # zero or one
+                    default=True
+                    )
+
 '''
     Main conditional block
 '''

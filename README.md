@@ -11,8 +11,15 @@ This repository contains Python scripts that translate Hypernomicon's XML into a
 
 ## How to use
 
-`python convert.py [--input XML_FILEPATH] [--json JSON_FILEPATH] [--html HTML_FILEPATH]`
+`python convert.py [--debate [DEBATE_ID]] [--debates [XML_DEBATES_FILEPATH]] [--positions [XML_POSITIONS_FILEPATH]] [--arguments [XML_ARGUMENTS_FILEPATH]] [--json [JSON_FILEPATH]] [--html [HTML_FILEPATH]] [--launch [LAUNCH_BROWSER]]`
 
-+ Default `XML_FILEPATH` is Positions.xml
-+ Default `JSON_FILEPATH` is hyper2gojs.json
-+ Default `HTML_FILEPATH` is blockEditor.html
+Defaults:
++ `DEBATE_ID`: `1`
++ `XML_DEBATES_FILEPATH`: `'Debates.xml'`
++ `XML_POSITIONS_FILEPATH`: `'Positions.xml'`
++ `XML_ARGUMENTS_FILEPATH`: `'Arguments.xml'`
++ `JSON_FILEPATH`: `'hyper2gojs_{debate}.json'`
++ `HTML_FILEPATH`: `'blockEditor.html'`
++ `LAUNCH_BROWSER`: `True`
+
+If the html filepath does not exist, it will be copied from `blockEditorTemplate.html`.
