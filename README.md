@@ -2,6 +2,11 @@
 
 Convert [Hypernomicon](https://sourceforge.net/projects/hypernomicon/) XML to GoJS [Block Editor](https://gojs.net/latest/samples/blockEditor.html) JSON.
 
+## Requirements
+
++ BeautifulSoup4: `pip install beautifulsoup4`
++ LXML: `pip install lxml`
+
 ## Motivation
 
 Hypernomicon, a tool for maintaining a personal database linking positions and arguments in the philosophy literature, stores entries as XML files.
